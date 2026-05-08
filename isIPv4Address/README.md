@@ -38,3 +38,4 @@
 </li>
 </ul>
 </div>
+<p><strong>Run test:</strong> <code>../vendor/bin/phpunit -c ../phpunit.xml ./IsIPv4AddressTest.php</code></p>

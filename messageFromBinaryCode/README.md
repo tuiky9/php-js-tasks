@@ -27,3 +27,4 @@ Other letters can be obtained in the same manner.</p>
 </ul>
 
 </div>
+<p><strong>Run test:</strong> <code>../vendor/bin/phpunit -c ../phpunit.xml ./MessageFromBinaryCodeTest.php</code></p>

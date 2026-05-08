@@ -16,6 +16,39 @@
             <directory suffix="Test.php">areSimilar</directory>
             <directory suffix="Test.php">arrayChange</directory>
             <directory suffix="Test.php">arrayMaxConsecutiveSum</directory>
+            <directory suffix="Test.php">arrayMaximalAdjacentDifference</directory>
+            <directory suffix="Test.php">arrayReplace</directory>
+            <directory suffix="Test.php">bishopAndPawn</directory>
+            <directory suffix="Test.php">buildPalindrome</directory>
+            <directory suffix="Test.php">centuryFromYear</directory>
+            <directory suffix="Test.php">checkPalindrome</directory>
+            <directory suffix="Test.php">chessBoardCellColor</directory>
+            <directory suffix="Test.php">circleOfNumbers</directory>
+            <directory suffix="Test.php">depositProfit</directory>
+            <directory suffix="Test.php">differentSymbolsNaive</directory>
+            <directory suffix="Test.php">electionsWinners</directory>
+            <directory suffix="Test.php">evenDigitsOnly</directory>
+            <directory suffix="Test.php">fileNaming</directory>
+            <directory suffix="Test.php">findEmailDomain</directory>
+            <directory suffix="Test.php">firstDigit</directory>
+            <directory suffix="Test.php">growingPlant</directory>
+            <directory suffix="Test.php">isBeautifulString</directory>
+            <directory suffix="Test.php">isDigit</directory>
+            <directory suffix="Test.php">isIPv4Address</directory>
+            <directory suffix="Test.php">isLucky</directory>
+            <directory suffix="Test.php">isMAC48Address</directory>
+            <directory suffix="Test.php">knapsackLight</directory>
+            <directory suffix="Test.php">lineEncoding</directory>
+            <directory suffix="Test.php">longestDigitsPrefix</directory>
+            <directory suffix="Test.php">longestWord</directory>
+            <directory suffix="Test.php">matrixElementsSum</directory>
+            <directory suffix="Test.php">messageFromBinaryCode</directory>
+            <directory suffix="Test.php">palindromeRearranging</directory>
+            <directory suffix="Test.php">reverseInParantheses</directory>
+            <directory suffix="Test.php">stringsRearrangement</directory>
+            <directory suffix="Test.php">sumUpNumbers</directory>
+            <directory suffix="Test.php">validTime</directory>
+            <directory suffix="Test.php">variableName</directory>
         </testsuite>
     </testsuites>
 </phpunit>

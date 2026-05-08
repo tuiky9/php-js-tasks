@@ -27,3 +27,4 @@
 </li>
 <li>
 </div>
+<p><strong>Run test:</strong> <code>../vendor/bin/phpunit -c ../phpunit.xml ./ArrayReplaceTest.php</code></p>

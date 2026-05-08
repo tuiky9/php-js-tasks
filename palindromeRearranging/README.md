@@ -24,3 +24,4 @@
 </li>
 </ul>
 </div>
+<p><strong>Run test:</strong> <code>../vendor/bin/phpunit -c ../phpunit.xml ./PalindromeRearrangingTest.php</code></p>

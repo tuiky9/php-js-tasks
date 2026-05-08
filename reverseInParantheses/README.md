@@ -30,3 +30,4 @@ Because <code>"foo(bar(baz))blim"</code> becomes <code>"foo(barzab)blim"</code> 
 </li>
 </ul>
 </div>
+<p><strong>Run test:</strong> <code>../vendor/bin/phpunit -c ../phpunit.xml ./ReverseInParanthesesTest.php</code></p>

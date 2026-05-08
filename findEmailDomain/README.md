@@ -25,3 +25,4 @@
 </li>
 </ul>
 </div>
+<p><strong>Run test:</strong> <code>../vendor/bin/phpunit -c ../phpunit.xml ./FindEmailDomainTest.php</code></p>

@@ -33,3 +33,4 @@
 </li>
 <li>
 </div>
+<p><strong>Run test:</strong> <code>../vendor/bin/phpunit -c ../phpunit.xml ./IsBeautifulStringTest.php</code></p>
