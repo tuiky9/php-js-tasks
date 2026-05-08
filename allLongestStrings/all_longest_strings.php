@@ -29,7 +29,7 @@ Array of the longest strings, stored in the same order as in the inputArray.
 
 */
 
-function allLongestStrings($inputArray)
+function allLongestStrings(array $inputArray): array
 {
     $max = max(array_map('strlen', $inputArray));
 

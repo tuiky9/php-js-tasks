@@ -51,22 +51,11 @@ function almostIncreasingSequence($sequence)
 
     //check if removing one element has made it sequential
     $seq2 = $sequence;
-    //print_r($seq);
     sort($sequence);
-    var_dump($sequence);
     $sequence = array_unique($sequence);
-    //print_r($sequence);
     if ($sequence != $seq2) {
         return false;
     }
 
     return true;
 }
-
-$sequence = [1, 3, 2, 4, 6, 99, 25];
-
-array_splice($sequence, 5, 1);
-
-//$res = almostIncreasingSequence($sequence);
-var_dump($sequence);
-die();

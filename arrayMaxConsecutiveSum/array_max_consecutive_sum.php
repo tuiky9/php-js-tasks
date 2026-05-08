@@ -1,5 +1,7 @@
-function arrayMaxConsecutiveSum($inputArray, $k) {
-    
+<?php
+
+function arrayMaxConsecutiveSum($inputArray, $k)
+{
     $sum = array_sum(array_slice($inputArray, 0, $k, true));
     $maxs = $sum;
     
@@ -12,5 +14,4 @@ function arrayMaxConsecutiveSum($inputArray, $k) {
         }
     
     return $maxs;
-
 }

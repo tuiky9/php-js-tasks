@@ -28,6 +28,7 @@ final class AbsoluteValuesSumMinimizationTest extends TestCase
             [[-10, -3, 0, 5, 9], 0],
             [[1], 1],
             [[1, 1, 1, 1, 2], 1],
+            [[1, 2, 145, 146, 2, 1], 145],
         ];
     }
 }

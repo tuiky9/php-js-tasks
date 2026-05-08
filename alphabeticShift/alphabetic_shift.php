@@ -12,10 +12,3 @@ function alphabeticShift($inputString)
     }
     return $r;
 }
-
-
-$inputString = "crazy";
-//  the output should be alphabeticShift(inputString) = "dsbaz".
-$res = alphabeticShift($inputString);
-var_dump($res);
-die();
