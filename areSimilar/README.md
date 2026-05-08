@@ -49,3 +49,4 @@ source: <a href="https://www.codesignal.com/">www.codesignal.com</a>
 </ul>
 
 </div>
+<p><strong>Run test:</strong> <code>../vendor/bin/phpunit -c ../phpunit.xml ./AreSimilarTest.php</code></p>

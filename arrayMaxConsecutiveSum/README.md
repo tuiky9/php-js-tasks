@@ -38,3 +38,4 @@ Thus, the answer is <code>8</code>.</li>
 </li>
 </ul>
 </div>
+<p><strong>Run test:</strong> <code>../vendor/bin/phpunit -c ../phpunit.xml ./ArrayMaxConsecutiveSumTest.php</code></p>

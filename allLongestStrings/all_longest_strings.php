@@ -31,8 +31,6 @@ Array of the longest strings, stored in the same order as in the inputArray.
 
 function allLongestStrings($inputArray)
 {
-//    var_dump(array_map(strlen(), $inputArray));
-//    die();
     $max = max(array_map('strlen', $inputArray));
 
     foreach ($inputArray as $k => $v) {
@@ -43,13 +41,3 @@ function allLongestStrings($inputArray)
 
     return array_values($inputArray);
 }
-
-
-$inputArray = ["aba", "aa", "ad", "vcd", "aba"];
-
-var_dump(
-    sizeof($inputArray),
-    count($inputArray),
-);
-
-//print_r(array_map('strlen', $inputArray));

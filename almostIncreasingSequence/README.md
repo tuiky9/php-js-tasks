@@ -34,3 +34,4 @@
 </li>
 </ul>
 </div>
+<p><strong>Run test:</strong> <code>../vendor/bin/phpunit -c ../phpunit.xml ./AlmostIncreasingSequenceTest.php</code></p>

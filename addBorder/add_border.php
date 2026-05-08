@@ -12,12 +12,12 @@ function addBorder($picture)
 }
 
 
-$picture = ["abc",
-           "ded"];
-//print_r(addBorder($picture));
-
-print_r(
-    PHP_EOL .
-    str_pad("", 10, "1234567")
-    . PHP_EOL
-) ;
+//$picture = ["abc",
+//           "ded"];
+////print_r(addBorder($picture));
+//
+//print_r(
+//    PHP_EOL .
+//    str_pad("", 10, "1234567")
+//    . PHP_EOL
+//) ;

@@ -24,3 +24,4 @@ It's guaranteed that for the given test cases the answer always fits signed <cod
 </li>
 </ul>
 </div>
+<p><strong>Run test:</strong> <code>../vendor/bin/phpunit -c ../phpunit.xml ./ArrayChangeTest.php</code></p>

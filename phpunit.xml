@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit
+    bootstrap="vendor/autoload.php"
+    colors="true"
+    cacheDirectory=".cache/phpunit"
+>
+    <testsuites>
+        <testsuite name="CodeSignal Tasks">
+            <directory suffix="Test.php">absoluteValuesSumMinimization</directory>
+            <directory suffix="Test.php">addBorder</directory>
+            <directory suffix="Test.php">allLongestStrings</directory>
+            <directory suffix="Test.php">almostIncreasingSequence</directory>
+            <directory suffix="Test.php">alphabeticShift</directory>
+            <directory suffix="Test.php">alternatingSums</directory>
+            <directory suffix="Test.php">areEquallyStrong</directory>
+            <directory suffix="Test.php">areSimilar</directory>
+            <directory suffix="Test.php">arrayChange</directory>
+            <directory suffix="Test.php">arrayMaxConsecutiveSum</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>
