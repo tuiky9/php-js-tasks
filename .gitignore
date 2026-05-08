@@ -1,0 +1,37 @@
+# Dependencies
+/vendor/
+
+# Composer
+/composer.phar
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Logs and runtime files
+*.log
+*.pid
+*.seed
+*.pid.lock
+
+# Caches and temp files
+/.phpunit.result.cache
+/.cache/
+/tmp/
+/temp/
+
+# Coverage reports
+/coverage/
+*.coverage
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Editor/IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
