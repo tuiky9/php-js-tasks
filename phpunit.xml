@@ -24,6 +24,7 @@
             <directory suffix="Test.php">checkPalindrome</directory>
             <directory suffix="Test.php">chessBoardCellColor</directory>
             <directory suffix="Test.php">circleOfNumbers</directory>
+            <directory suffix="Test.php">commonCharacterCount</directory>
             <directory suffix="Test.php">depositProfit</directory>
             <directory suffix="Test.php">differentSymbolsNaive</directory>
             <directory suffix="Test.php">electionsWinners</directory>
@@ -41,10 +42,13 @@
             <directory suffix="Test.php">lineEncoding</directory>
             <directory suffix="Test.php">longestDigitsPrefix</directory>
             <directory suffix="Test.php">longestWord</directory>
+            <directory suffix="Test.php">makeArrayConsective</directory>
             <directory suffix="Test.php">matrixElementsSum</directory>
             <directory suffix="Test.php">messageFromBinaryCode</directory>
             <directory suffix="Test.php">palindromeRearranging</directory>
             <directory suffix="Test.php">reverseInParantheses</directory>
+            <directory suffix="Test.php">shapeArea</directory>
+            <directory suffix="Test.php">sortByHeight</directory>
             <directory suffix="Test.php">stringsRearrangement</directory>
             <directory suffix="Test.php">sumUpNumbers</directory>
             <directory suffix="Test.php">validTime</directory>

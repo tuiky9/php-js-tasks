@@ -1,6 +1,5 @@
 <?php
 
-function absoluteValuesSumMinimization(array $a): int
-{
-    return $a[ceil(sizeof($a) / 2) - 1];
+function absoluteValuesSumMinimization(array $input): int {
+    return $input[ceil(count($input) / 2) - 1];
 }
