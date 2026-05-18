@@ -46,6 +46,7 @@
             <directory suffix="Test.php">matrixElementsSum</directory>
             <directory suffix="Test.php">messageFromBinaryCode</directory>
             <directory suffix="Test.php">palindromeRearranging</directory>
+            <directory suffix="Test.php">phpDocTransform</directory>
             <directory suffix="Test.php">reverseInParantheses</directory>
             <directory suffix="Test.php">shapeArea</directory>
             <directory suffix="Test.php">sortByHeight</directory>
