@@ -45,6 +45,7 @@
             <directory suffix="Test.php">makeArrayConsective</directory>
             <directory suffix="Test.php">matrixElementsSum</directory>
             <directory suffix="Test.php">messageFromBinaryCode</directory>
+            <directory suffix="Test.php">pairingCharsRecursively</directory>
             <directory suffix="Test.php">palindromeRearranging</directory>
             <directory suffix="Test.php">phpDocTransform</directory>
             <directory suffix="Test.php">reverseInParantheses</directory>
