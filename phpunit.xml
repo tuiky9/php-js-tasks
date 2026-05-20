@@ -25,6 +25,7 @@
             <directory suffix="Test.php">chessBoardCellColor</directory>
             <directory suffix="Test.php">circleOfNumbers</directory>
             <directory suffix="Test.php">commonCharacterCount</directory>
+            <directory suffix="Test.php">dedupePreserveOrder</directory>
             <directory suffix="Test.php">depositProfit</directory>
             <directory suffix="Test.php">differentSymbolsNaive</directory>
             <directory suffix="Test.php">electionsWinners</directory>
@@ -47,10 +48,12 @@
             <directory suffix="Test.php">messageFromBinaryCode</directory>
             <directory suffix="Test.php">pairingCharsRecursively</directory>
             <directory suffix="Test.php">palindromeRearranging</directory>
+            <directory suffix="Test.php">parseQueryString</directory>
             <directory suffix="Test.php">phpDocTransform</directory>
             <directory suffix="Test.php">reverseInParantheses</directory>
             <directory suffix="Test.php">shapeArea</directory>
             <directory suffix="Test.php">sortByHeight</directory>
+            <directory suffix="Test.php">slugifyTitle</directory>
             <directory suffix="Test.php">stringsRearrangement</directory>
             <directory suffix="Test.php">sumUpNumbers</directory>
             <directory suffix="Test.php">validTime</directory>
