@@ -33,6 +33,7 @@
             <directory suffix="Test.php">fileNaming</directory>
             <directory suffix="Test.php">findEmailDomain</directory>
             <directory suffix="Test.php">firstDigit</directory>
+            <directory suffix="Test.php">formatBytes</directory>
             <directory suffix="Test.php">growingPlant</directory>
             <directory suffix="Test.php">isBeautifulString</directory>
             <directory suffix="Test.php">isDigit</directory>
