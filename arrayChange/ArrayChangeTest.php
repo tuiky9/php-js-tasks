@@ -11,7 +11,7 @@ final class ArrayChangeTest extends TestCase
 {
     public static function setUpBeforeClass(): void
     {
-        FunctionLoader::load(__DIR__ . '/array_change.php', 'arrayChange');
+        FunctionLoader::load(__DIR__ . '/php/array_change.php', 'arrayChange');
     }
 
     #[DataProvider('provideCases')]

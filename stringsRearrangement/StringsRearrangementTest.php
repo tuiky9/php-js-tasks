@@ -11,7 +11,7 @@ final class StringsRearrangementTest extends TestCase
 {
     public static function setUpBeforeClass(): void
     {
-        FunctionLoader::load(__DIR__ . '/strings_rearrangement.php', 'stringsRearrangement');
+        FunctionLoader::load(__DIR__ . '/php/strings_rearrangement.php', 'stringsRearrangement');
     }
 
     #[DataProvider('provideCases')]

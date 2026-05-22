@@ -11,7 +11,7 @@ final class DepositProfitTest extends TestCase
 {
     public static function setUpBeforeClass(): void
     {
-        FunctionLoader::load(__DIR__ . '/deposit_profit.php', 'depositProfit');
+        FunctionLoader::load(__DIR__ . '/php/deposit_profit.php', 'depositProfit');
     }
 
     #[DataProvider('provideCases')]

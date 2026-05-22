@@ -11,7 +11,7 @@ final class AreSimilarTest extends TestCase
 {
     public static function setUpBeforeClass(): void
     {
-        FunctionLoader::load(__DIR__ . '/are_similar.php', 'areSimilar');
+        FunctionLoader::load(__DIR__ . '/php/are_similar.php', 'areSimilar');
     }
 
     #[DataProvider('provideCases')]

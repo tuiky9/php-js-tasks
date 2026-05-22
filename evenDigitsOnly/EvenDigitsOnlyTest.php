@@ -11,7 +11,7 @@ final class EvenDigitsOnlyTest extends TestCase
 {
     public static function setUpBeforeClass(): void
     {
-        FunctionLoader::load(__DIR__ . '/even_digits_only.php', 'evenDigitsOnly');
+        FunctionLoader::load(__DIR__ . '/php/even_digits_only.php', 'evenDigitsOnly');
     }
 
     #[DataProvider('provideCases')]

@@ -11,7 +11,7 @@ final class MessageFromBinaryCodeTest extends TestCase
 {
     public static function setUpBeforeClass(): void
     {
-        FunctionLoader::load(__DIR__ . '/message_from_binary_code.php', 'messageFromBinaryCode');
+        FunctionLoader::load(__DIR__ . '/php/message_from_binary_code.php', 'messageFromBinaryCode');
     }
 
     #[DataProvider('provideCases')]

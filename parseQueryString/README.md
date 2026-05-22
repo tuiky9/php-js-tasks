@@ -56,7 +56,7 @@ Output: ['key' => 'a=b']
 function parseQueryString(string $query): array
 ```
 
-Implement this function in `parse_query_string.php`.
+Implement this function in `php/parse_query_string.php`.
 
 ## Run tests
 

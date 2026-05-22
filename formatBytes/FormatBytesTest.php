@@ -11,7 +11,7 @@ final class FormatBytesTest extends TestCase
 {
     public static function setUpBeforeClass(): void
     {
-        FunctionLoader::load(__DIR__ . '/format_bytes.php', 'formatBytes');
+        FunctionLoader::load(__DIR__ . '/php/format_bytes.php', 'formatBytes');
     }
 
     #[DataProvider('provideCases')]

@@ -11,7 +11,7 @@ final class LongestWordTest extends TestCase
 {
     public static function setUpBeforeClass(): void
     {
-        FunctionLoader::load(__DIR__ . '/longest_word.php', 'longestWord');
+        FunctionLoader::load(__DIR__ . '/php/longest_word.php', 'longestWord');
     }
 
     #[DataProvider('provideCases')]

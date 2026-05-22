@@ -11,7 +11,7 @@ final class SortByHeightTest extends TestCase
 {
     public static function setUpBeforeClass(): void
     {
-        FunctionLoader::load(__DIR__ . '/sort_by_height.php', 'sortByHeight');
+        FunctionLoader::load(__DIR__ . '/php/sort_by_height.php', 'sortByHeight');
     }
 
     #[DataProvider('provideCases')]

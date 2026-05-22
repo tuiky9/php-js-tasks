@@ -82,7 +82,7 @@ Output:
 function transformPhpDocVariables(string $phpDoc): string
 ```
 
-Implement this function in `phpDoc_transform.php`.
+Implement this function in `php/phpDoc_transform.php`.
 
 ## Run tests
 

@@ -11,7 +11,7 @@ final class CenturyFromYearTest extends TestCase
 {
     public static function setUpBeforeClass(): void
     {
-        FunctionLoader::load(__DIR__ . '/century_from_year.php', 'centuryFromYear');
+        FunctionLoader::load(__DIR__ . '/php/century_from_year.php', 'centuryFromYear');
     }
 
     #[DataProvider('provideCases')]

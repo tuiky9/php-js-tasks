@@ -11,7 +11,7 @@ final class SlugifyTitleTest extends TestCase
 {
     public static function setUpBeforeClass(): void
     {
-        FunctionLoader::load(__DIR__ . '/slugify_title.php', 'slugifyTitle');
+        FunctionLoader::load(__DIR__ . '/php/slugify_title.php', 'slugifyTitle');
     }
 
     #[DataProvider('provideCases')]

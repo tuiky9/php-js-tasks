@@ -51,7 +51,7 @@ Output: [1, '1']
 function dedupePreserveOrder(array $items): array
 ```
 
-Implement this function in `dedupe_preserve_order.php`.
+Implement this function in `php/dedupe_preserve_order.php`.
 
 ## Run tests
 

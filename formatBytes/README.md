@@ -52,7 +52,7 @@ Output: 1.0 MB
 function formatBytes(int $bytes): string
 ```
 
-Implement this function in `format_bytes.php`.
+Implement this function in `php/format_bytes.php`.
 
 ## Run tests
 

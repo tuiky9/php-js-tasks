@@ -11,7 +11,7 @@ final class AlmostIncreasingSequenceTest extends TestCase
 {
     public static function setUpBeforeClass(): void
     {
-        FunctionLoader::load(__DIR__ . '/almost_increasing_sequence.php', 'almostIncreasingSequence');
+        FunctionLoader::load(__DIR__ . '/php/almost_increasing_sequence.php', 'almostIncreasingSequence');
     }
 
     #[DataProvider('provideCases')]

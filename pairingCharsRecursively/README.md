@@ -49,7 +49,7 @@ Pairs: `a`+`e`, `b`+`d`, middle `c` unchanged → `ae` + `bdc` = `aebdc`.
 function solve(string $s): string
 ```
 
-Implement this function in `pairing_chars_recursively.php`.
+Implement this function in `php/pairing_chars_recursively.php`.
 
 ## Run tests
 

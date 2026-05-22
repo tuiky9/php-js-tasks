@@ -11,7 +11,7 @@ final class FileNamingTest extends TestCase
 {
     public static function setUpBeforeClass(): void
     {
-        FunctionLoader::load(__DIR__ . '/file_naming.php', 'fileNaming');
+        FunctionLoader::load(__DIR__ . '/php/file_naming.php', 'fileNaming');
     }
 
     #[DataProvider('provideCases')]

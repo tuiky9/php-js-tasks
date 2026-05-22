@@ -11,7 +11,7 @@ final class CheckPalindromeTest extends TestCase
 {
     public static function setUpBeforeClass(): void
     {
-        FunctionLoader::load(__DIR__ . '/check_palindrome.php', 'checkPalindrome');
+        FunctionLoader::load(__DIR__ . '/php/check_palindrome.php', 'checkPalindrome');
     }
 
     #[DataProvider('provideCases')]

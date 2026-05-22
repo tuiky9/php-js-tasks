@@ -11,7 +11,7 @@ final class ParseQueryStringTest extends TestCase
 {
     public static function setUpBeforeClass(): void
     {
-        FunctionLoader::load(__DIR__ . '/parse_query_string.php', 'parseQueryString');
+        FunctionLoader::load(__DIR__ . '/php/parse_query_string.php', 'parseQueryString');
     }
 
     #[DataProvider('provideCases')]

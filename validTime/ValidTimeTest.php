@@ -11,7 +11,7 @@ final class ValidTimeTest extends TestCase
 {
     public static function setUpBeforeClass(): void
     {
-        FunctionLoader::load(__DIR__ . '/valid_time.php', 'validTime');
+        FunctionLoader::load(__DIR__ . '/php/valid_time.php', 'validTime');
     }
 
     #[DataProvider('provideCases')]

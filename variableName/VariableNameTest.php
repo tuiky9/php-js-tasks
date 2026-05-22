@@ -11,7 +11,7 @@ final class VariableNameTest extends TestCase
 {
     public static function setUpBeforeClass(): void
     {
-        FunctionLoader::load(__DIR__ . '/variable_name.php', 'variableName');
+        FunctionLoader::load(__DIR__ . '/php/variable_name.php', 'variableName');
     }
 
     #[DataProvider('provideCases')]

@@ -11,7 +11,7 @@ final class AbsoluteValuesSumMinimizationTest extends TestCase
 {
     public static function setUpBeforeClass(): void
     {
-        FunctionLoader::load(__DIR__ . '/absolute_values_sum_minimization.php', 'absoluteValuesSumMinimization');
+        FunctionLoader::load(__DIR__ . '/php/absolute_values_sum_minimization.php', 'absoluteValuesSumMinimization');
     }
 
     #[DataProvider('provideCases')]

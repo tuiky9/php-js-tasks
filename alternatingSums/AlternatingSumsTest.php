@@ -11,7 +11,7 @@ final class AlternatingSumsTest extends TestCase
 {
     public static function setUpBeforeClass(): void
     {
-        FunctionLoader::load(__DIR__ . '/alternating_sums.php', 'alternatingSums');
+        FunctionLoader::load(__DIR__ . '/php/alternating_sums.php', 'alternatingSums');
     }
 
     #[DataProvider('provideCases')]

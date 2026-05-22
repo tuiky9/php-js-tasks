@@ -11,7 +11,7 @@ final class AllLongestStringsTest extends TestCase
 {
     public static function setUpBeforeClass(): void
     {
-        FunctionLoader::load(__DIR__ . '/all_longest_strings.php', 'allLongestStrings');
+        FunctionLoader::load(__DIR__ . '/php/all_longest_strings.php', 'allLongestStrings');
     }
 
     #[DataProvider('provideCases')]

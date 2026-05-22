@@ -11,7 +11,7 @@ final class ChessBoardCellColorTest extends TestCase
 {
     public static function setUpBeforeClass(): void
     {
-        FunctionLoader::load(__DIR__ . '/chess_board_cell_color.php', 'chessBoardCellColor');
+        FunctionLoader::load(__DIR__ . '/php/chess_board_cell_color.php', 'chessBoardCellColor');
     }
 
     #[DataProvider('provideCases')]

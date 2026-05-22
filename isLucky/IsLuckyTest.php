@@ -11,7 +11,7 @@ final class IsLuckyTest extends TestCase
 {
     public static function setUpBeforeClass(): void
     {
-        FunctionLoader::load(__DIR__ . '/is_lucky.php', 'isLucky');
+        FunctionLoader::load(__DIR__ . '/php/is_lucky.php', 'isLucky');
     }
 
     #[DataProvider('provideCases')]

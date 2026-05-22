@@ -11,7 +11,7 @@ final class ReverseInParanthesesTest extends TestCase
 {
     public static function setUpBeforeClass(): void
     {
-        FunctionLoader::load(__DIR__ . '/reverse_in_parantheses.php', 'reverseInParentheses');
+        FunctionLoader::load(__DIR__ . '/php/reverse_in_parantheses.php', 'reverseInParentheses');
     }
 
     #[DataProvider('provideCases')]

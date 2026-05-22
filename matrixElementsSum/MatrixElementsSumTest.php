@@ -11,7 +11,7 @@ final class MatrixElementsSumTest extends TestCase
 {
     public static function setUpBeforeClass(): void
     {
-        FunctionLoader::load(__DIR__ . '/matrix_elements_sum.php', 'matrixElementsSum');
+        FunctionLoader::load(__DIR__ . '/php/matrix_elements_sum.php', 'matrixElementsSum');
     }
 
     #[DataProvider('provideCases')]
@@ -27,7 +27,7 @@ final class MatrixElementsSumTest extends TestCase
             [[[[1, 1, 1, 0], [0, 5, 0, 1], [2, 1, 3, 10]]], 9],
             [[[[1]]], 1],
             [[[[0]]], 0],
-            [[[[4, 0], [1, 1], [2, 2]]], 6],
+            [[[[4, 0], [1, 1], [2, 2]]], 7],
         ];
     }
 }

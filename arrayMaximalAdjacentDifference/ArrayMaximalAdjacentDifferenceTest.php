@@ -11,7 +11,7 @@ final class ArrayMaximalAdjacentDifferenceTest extends TestCase
 {
     public static function setUpBeforeClass(): void
     {
-        FunctionLoader::load(__DIR__ . '/array_maximal_adjacent_diffrence.php', 'arrayMaximalAdjacentDifference');
+        FunctionLoader::load(__DIR__ . '/php/array_maximal_adjacent_diffrence.php', 'arrayMaximalAdjacentDifference');
     }
 
     #[DataProvider('provideCases')]
@@ -25,7 +25,7 @@ final class ArrayMaximalAdjacentDifferenceTest extends TestCase
         return [
             [[[2, 4, 1, 0]], 3],
             [[[1, 1, 1, 1]], 0],
-            [[[-1, 4, 10, 3, -2]], 9],
+            [[[-1, 4, 10, 3, -2]], 7],
             [[[10, -10, 10, -10]], 20],
             [[[5, 11, 2, 17]], 15],
         ];

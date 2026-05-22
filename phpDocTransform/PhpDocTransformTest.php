@@ -11,7 +11,7 @@ final class PhpDocTransformTest extends TestCase
 {
     public static function setUpBeforeClass(): void
     {
-        FunctionLoader::load(__DIR__ . '/phpDoc_transform.php', 'transformPhpDocVariables');
+        FunctionLoader::load(__DIR__ . '/php/phpDoc_transform.php', 'transformPhpDocVariables');
     }
 
     #[DataProvider('provideCases')]

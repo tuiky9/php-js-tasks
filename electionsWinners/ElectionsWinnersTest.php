@@ -11,7 +11,7 @@ final class ElectionsWinnersTest extends TestCase
 {
     public static function setUpBeforeClass(): void
     {
-        FunctionLoader::load(__DIR__ . '/elections_winners.php', 'electionsWinners');
+        FunctionLoader::load(__DIR__ . '/php/elections_winners.php', 'electionsWinners');
     }
 
     #[DataProvider('provideCases')]

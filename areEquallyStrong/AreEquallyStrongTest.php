@@ -11,7 +11,7 @@ final class AreEquallyStrongTest extends TestCase
 {
     public static function setUpBeforeClass(): void
     {
-        FunctionLoader::load(__DIR__ . '/are_equally_strong.php', 'areEquallyStrong');
+        FunctionLoader::load(__DIR__ . '/php/are_equally_strong.php', 'areEquallyStrong');
     }
 
     #[DataProvider('provideCases')]

@@ -11,7 +11,7 @@ final class DifferentSymbolsNaiveTest extends TestCase
 {
     public static function setUpBeforeClass(): void
     {
-        FunctionLoader::load(__DIR__ . '/different_symbols_naive.php', 'differentSymbolsNaive');
+        FunctionLoader::load(__DIR__ . '/php/different_symbols_naive.php', 'differentSymbolsNaive');
     }
 
     #[DataProvider('provideCases')]

@@ -50,7 +50,7 @@ Output: "year-2024-best-practices"
 function slugifyTitle(string $title): string
 ```
 
-Implement this function in `slugify_title.php`.
+Implement this function in `php/slugify_title.php`.
 
 ## Run tests
 

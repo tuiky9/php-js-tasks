@@ -11,7 +11,7 @@ final class IsMAC48AddressTest extends TestCase
 {
     public static function setUpBeforeClass(): void
     {
-        FunctionLoader::load(__DIR__ . '/is_mac_48_address.php', 'isMAC48Address');
+        FunctionLoader::load(__DIR__ . '/php/is_mac_48_address.php', 'isMAC48Address');
     }
 
     #[DataProvider('provideCases')]

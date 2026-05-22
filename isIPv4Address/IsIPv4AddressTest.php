@@ -11,7 +11,7 @@ final class IsIPv4AddressTest extends TestCase
 {
     public static function setUpBeforeClass(): void
     {
-        FunctionLoader::load(__DIR__ . '/is_ipv4_address.php', 'isIPv4Address');
+        FunctionLoader::load(__DIR__ . '/php/is_ipv4_address.php', 'isIPv4Address');
     }
 
     #[DataProvider('provideCases')]

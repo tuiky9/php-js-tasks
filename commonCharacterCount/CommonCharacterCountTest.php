@@ -11,7 +11,7 @@ final class CommonCharacterCountTest extends TestCase
 {
     public static function setUpBeforeClass(): void
     {
-        FunctionLoader::load(__DIR__ . '/common_character_count.php', 'commonCharacterCount');
+        FunctionLoader::load(__DIR__ . '/php/common_character_count.php', 'commonCharacterCount');
     }
 
     #[DataProvider('provideCases')]

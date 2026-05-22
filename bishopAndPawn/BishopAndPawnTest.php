@@ -11,7 +11,7 @@ final class BishopAndPawnTest extends TestCase
 {
     public static function setUpBeforeClass(): void
     {
-        FunctionLoader::load(__DIR__ . '/bishop_and_pawn.php', 'bishopAndPawn');
+        FunctionLoader::load(__DIR__ . '/php/bishop_and_pawn.php', 'bishopAndPawn');
     }
 
     #[DataProvider('provideCases')]

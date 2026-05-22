@@ -11,7 +11,7 @@ final class ShapeAreaTest extends TestCase
 {
     public static function setUpBeforeClass(): void
     {
-        FunctionLoader::load(__DIR__ . '/shape-area.php', 'shapeArea');
+        FunctionLoader::load(__DIR__ . '/php/shape-area.php', 'shapeArea');
     }
 
     #[DataProvider('provideCases')]

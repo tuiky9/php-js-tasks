@@ -11,7 +11,7 @@ final class MakeArrayConsecutive2Test extends TestCase
 {
     public static function setUpBeforeClass(): void
     {
-        FunctionLoader::load(__DIR__ . '/make_array_consective_2.php', 'makeArrayConsecutive2');
+        FunctionLoader::load(__DIR__ . '/php/make_array_consective_2.php', 'makeArrayConsecutive2');
     }
 
     #[DataProvider('provideCases')]

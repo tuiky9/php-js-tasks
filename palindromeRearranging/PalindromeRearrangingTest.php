@@ -11,7 +11,7 @@ final class PalindromeRearrangingTest extends TestCase
 {
     public static function setUpBeforeClass(): void
     {
-        FunctionLoader::load(__DIR__ . '/palindrome_rearranging.php', 'palindromeRearranging');
+        FunctionLoader::load(__DIR__ . '/php/palindrome_rearranging.php', 'palindromeRearranging');
     }
 
     #[DataProvider('provideCases')]

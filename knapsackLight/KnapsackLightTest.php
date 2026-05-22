@@ -11,7 +11,7 @@ final class KnapsackLightTest extends TestCase
 {
     public static function setUpBeforeClass(): void
     {
-        FunctionLoader::load(__DIR__ . '/knapsack_light.php', 'knapsackLight');
+        FunctionLoader::load(__DIR__ . '/php/knapsack_light.php', 'knapsackLight');
     }
 
     #[DataProvider('provideCases')]

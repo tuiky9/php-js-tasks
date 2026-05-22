@@ -11,7 +11,7 @@ final class BuildPalindromeTest extends TestCase
 {
     public static function setUpBeforeClass(): void
     {
-        FunctionLoader::load(__DIR__ . '/build_palindrome.php', 'buildPalindrome');
+        FunctionLoader::load(__DIR__ . '/php/build_palindrome.php', 'buildPalindrome');
     }
 
     #[DataProvider('provideCases')]

@@ -11,7 +11,7 @@ final class LongestDigitsPrefixTest extends TestCase
 {
     public static function setUpBeforeClass(): void
     {
-        FunctionLoader::load(__DIR__ . '/longest_digits_prefix.php', 'longestDigitsPrefix');
+        FunctionLoader::load(__DIR__ . '/php/longest_digits_prefix.php', 'longestDigitsPrefix');
     }
 
     #[DataProvider('provideCases')]

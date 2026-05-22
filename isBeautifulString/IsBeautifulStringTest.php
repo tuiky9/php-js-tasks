@@ -11,7 +11,7 @@ final class IsBeautifulStringTest extends TestCase
 {
     public static function setUpBeforeClass(): void
     {
-        FunctionLoader::load(__DIR__ . '/is_beautiful_string.php', 'isBeautifulString');
+        FunctionLoader::load(__DIR__ . '/php/is_beautiful_string.php', 'isBeautifulString');
     }
 
     #[DataProvider('provideCases')]

@@ -11,7 +11,7 @@ final class PairingCharsRecursivelyTest extends TestCase
 {
     public static function setUpBeforeClass(): void
     {
-        FunctionLoader::load(__DIR__ . '/pairing_chars_recursively.php', 'solve');
+        FunctionLoader::load(__DIR__ . '/php/pairing_chars_recursively.php', 'solve');
     }
 
     #[DataProvider('provideCases')]

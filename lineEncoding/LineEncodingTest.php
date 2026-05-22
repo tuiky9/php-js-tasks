@@ -11,7 +11,7 @@ final class LineEncodingTest extends TestCase
 {
     public static function setUpBeforeClass(): void
     {
-        FunctionLoader::load(__DIR__ . '/line_encoding.php', 'lineEncoding');
+        FunctionLoader::load(__DIR__ . '/php/line_encoding.php', 'lineEncoding');
     }
 
     #[DataProvider('provideCases')]

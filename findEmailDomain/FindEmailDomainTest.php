@@ -11,7 +11,7 @@ final class FindEmailDomainTest extends TestCase
 {
     public static function setUpBeforeClass(): void
     {
-        FunctionLoader::load(__DIR__ . '/find_email_domain.php', 'findEmailDomain');
+        FunctionLoader::load(__DIR__ . '/php/find_email_domain.php', 'findEmailDomain');
     }
 
     #[DataProvider('provideCases')]

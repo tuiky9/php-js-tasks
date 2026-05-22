@@ -11,7 +11,7 @@ final class SumUpNumbersTest extends TestCase
 {
     public static function setUpBeforeClass(): void
     {
-        FunctionLoader::load(__DIR__ . '/sum_up_numbers.php', 'sumUpNumbers');
+        FunctionLoader::load(__DIR__ . '/php/sum_up_numbers.php', 'sumUpNumbers');
     }
 
     #[DataProvider('provideCases')]

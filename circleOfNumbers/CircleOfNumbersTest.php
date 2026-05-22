@@ -11,7 +11,7 @@ final class CircleOfNumbersTest extends TestCase
 {
     public static function setUpBeforeClass(): void
     {
-        FunctionLoader::load(__DIR__ . '/circle_of_numbers.php', 'circleOfNumbers');
+        FunctionLoader::load(__DIR__ . '/php/circle_of_numbers.php', 'circleOfNumbers');
     }
 
     #[DataProvider('provideCases')]

@@ -11,7 +11,7 @@ final class GrowingPlantTest extends TestCase
 {
     public static function setUpBeforeClass(): void
     {
-        FunctionLoader::load(__DIR__ . '/growing_plant.php', 'growingPlant');
+        FunctionLoader::load(__DIR__ . '/php/growing_plant.php', 'growingPlant');
     }
 
     #[DataProvider('provideCases')]

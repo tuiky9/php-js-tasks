@@ -11,7 +11,7 @@ final class AddBorderTest extends TestCase
 {
     public static function setUpBeforeClass(): void
     {
-        FunctionLoader::load(__DIR__ . '/add_border.php', 'addBorder');
+        FunctionLoader::load(__DIR__ . '/php/add_border.php', 'addBorder');
     }
 
     #[DataProvider('provideCases')]

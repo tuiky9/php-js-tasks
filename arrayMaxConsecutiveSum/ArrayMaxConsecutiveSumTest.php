@@ -11,7 +11,7 @@ final class ArrayMaxConsecutiveSumTest extends TestCase
 {
     public static function setUpBeforeClass(): void
     {
-        FunctionLoader::load(__DIR__ . '/array_max_consecutive_sum.php', 'arrayMaxConsecutiveSum');
+        FunctionLoader::load(__DIR__ . '/php/array_max_consecutive_sum.php', 'arrayMaxConsecutiveSum');
     }
 
     #[DataProvider('provideCases')]

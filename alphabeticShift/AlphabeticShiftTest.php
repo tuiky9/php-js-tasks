@@ -11,7 +11,7 @@ final class AlphabeticShiftTest extends TestCase
 {
     public static function setUpBeforeClass(): void
     {
-        FunctionLoader::load(__DIR__ . '/alphabetic_shift.php', 'alphabeticShift');
+        FunctionLoader::load(__DIR__ . '/php/alphabetic_shift.php', 'alphabeticShift');
     }
 
     #[DataProvider('provideCases')]

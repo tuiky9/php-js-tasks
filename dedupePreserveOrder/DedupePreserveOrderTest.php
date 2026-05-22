@@ -11,7 +11,7 @@ final class DedupePreserveOrderTest extends TestCase
 {
     public static function setUpBeforeClass(): void
     {
-        FunctionLoader::load(__DIR__ . '/dedupe_preserve_order.php', 'dedupePreserveOrder');
+        FunctionLoader::load(__DIR__ . '/php/dedupe_preserve_order.php', 'dedupePreserveOrder');
     }
 
     #[DataProvider('provideCases')]
