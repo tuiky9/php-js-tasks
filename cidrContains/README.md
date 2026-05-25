@@ -58,6 +58,12 @@ function cidrContains(string $ip, string $cidr): bool
 
 Implement this function in `php/cidr_contains.php`.
 
+```javascript
+function cidrContains(ip, cidr)
+```
+
+Implement this function in `js/cidr_contains.js`.
+
 ## Run tests
 
 From the repository root, install dependencies once:
