@@ -54,6 +54,12 @@ function deepMerge(array $left, array $right): array
 
 Implement this function in `php/deep_merge.php`.
 
+```javascript
+function deepMerge(left, right)
+```
+
+Implement this function in `js/deep_merge.js`. Use plain objects `{}` for maps and arrays `[]` for lists.
+
 ## Run tests
 
 From the repository root, install dependencies once:
