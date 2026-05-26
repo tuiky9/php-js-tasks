@@ -27,6 +27,7 @@
             <directory suffix="Test.php">circleOfNumbers</directory>
             <directory suffix="Test.php">commonCharacterCount</directory>
             <directory suffix="Test.php">dedupePreserveOrder</directory>
+            <directory suffix="Test.php">deepMerge</directory>
             <directory suffix="Test.php">depositProfit</directory>
             <directory suffix="Test.php">differentSymbolsNaive</directory>
             <directory suffix="Test.php">electionsWinners</directory>
