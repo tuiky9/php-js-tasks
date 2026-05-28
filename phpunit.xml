@@ -59,6 +59,7 @@
             <directory suffix="Test.php">slugifyTitle</directory>
             <directory suffix="Test.php">stringsRearrangement</directory>
             <directory suffix="Test.php">sumUpNumbers</directory>
+            <directory suffix="Test.php">toeplitzMatrix</directory>
             <directory suffix="Test.php">validTime</directory>
             <directory suffix="Test.php">variableName</directory>
         </testsuite>
