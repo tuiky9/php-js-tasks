@@ -19,6 +19,7 @@
             <directory suffix="Test.php">arrayMaximalAdjacentDifference</directory>
             <directory suffix="Test.php">arrayReplace</directory>
             <directory suffix="Test.php">bishopAndPawn</directory>
+            <directory suffix="Test.php">binarySearch</directory>
             <directory suffix="Test.php">buildPalindrome</directory>
             <directory suffix="Test.php">centuryFromYear</directory>
             <directory suffix="Test.php">checkPalindrome</directory>
