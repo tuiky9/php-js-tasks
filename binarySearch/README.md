@@ -54,6 +54,12 @@ function binarySearch(array $sorted, int $target): int
 
 Implement this function in `php/binary_search.php`.
 
+```javascript
+function binarySearch(sorted, target)
+```
+
+Implement this function in `js/binary_search.js`.
+
 ## Run tests
 
 From the repository root, install dependencies once:
