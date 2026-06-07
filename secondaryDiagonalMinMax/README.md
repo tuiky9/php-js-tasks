@@ -66,6 +66,12 @@ class Solution {
 
 Implement in `php/secondary_diagonal_min_max.php`.
 
+```javascript
+function secondaryDiagonalMinMax(grid)
+```
+
+Implement in `js/secondary_diagonal_min_max.js`.
+
 ## Run tests
 
 From this task directory (`secondaryDiagonalMinMax`), run PHPUnit:

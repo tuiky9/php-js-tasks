@@ -75,6 +75,12 @@ class Solution {
 
 Implement in `php/count_less_than_matrix.php`.
 
+```javascript
+function countLessThan(matrix, target)
+```
+
+Implement in `js/count_less_than_matrix.js`.
+
 ## Run tests
 
 From this task directory (`countLessThanMatrix`), run PHPUnit:
