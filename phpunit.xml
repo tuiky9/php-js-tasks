@@ -46,6 +46,7 @@
             <directory suffix="Test.php">isMAC48Address</directory>
             <directory suffix="Test.php">knapsackLight</directory>
             <directory suffix="Test.php">lineEncoding</directory>
+            <directory suffix="Test.php">longestCommonSuffix</directory>
             <directory suffix="Test.php">longestDigitsPrefix</directory>
             <directory suffix="Test.php">longestWord</directory>
             <directory suffix="Test.php">makeArrayConsective</directory>
