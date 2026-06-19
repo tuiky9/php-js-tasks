@@ -39,6 +39,7 @@
             <directory suffix="Test.php">firstDigit</directory>
             <directory suffix="Test.php">formatBytes</directory>
             <directory suffix="Test.php">growingPlant</directory>
+            <directory suffix="Test.php">intersectStrings</directory>
             <directory suffix="Test.php">isBeautifulString</directory>
             <directory suffix="Test.php">isDigit</directory>
             <directory suffix="Test.php">isIPv4Address</directory>
@@ -51,6 +52,7 @@
             <directory suffix="Test.php">longestWord</directory>
             <directory suffix="Test.php">makeArrayConsective</directory>
             <directory suffix="Test.php">matrixElementsSum</directory>
+            <directory suffix="Test.php">mergeSortedArrays</directory>
             <directory suffix="Test.php">messageFromBinaryCode</directory>
             <directory suffix="Test.php">pairingCharsRecursively</directory>
             <directory suffix="Test.php">palindromeRearranging</directory>
