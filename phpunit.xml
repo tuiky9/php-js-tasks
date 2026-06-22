@@ -58,6 +58,7 @@
             <directory suffix="Test.php">palindromeRearranging</directory>
             <directory suffix="Test.php">parseQueryString</directory>
             <directory suffix="Test.php">phpDocTransform</directory>
+            <directory suffix="Test.php">removeCommonElements</directory>
             <directory suffix="Test.php">reverseInParantheses</directory>
             <directory suffix="Test.php">reverseInGroups</directory>
             <directory suffix="Test.php">secondaryDiagonalMinMax</directory>
