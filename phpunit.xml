@@ -20,6 +20,7 @@
             <directory suffix="Test.php">arrayReplace/php</directory>
             <directory suffix="Test.php">bishopAndPawn/php</directory>
             <directory suffix="Test.php">binarySearch/php</directory>
+            <directory suffix="Test.php">boxBlur/php</directory>
             <directory suffix="Test.php">buildPalindrome/php</directory>
             <directory suffix="Test.php">centuryFromYear/php</directory>
             <directory suffix="Test.php">checkPalindrome/php</directory>

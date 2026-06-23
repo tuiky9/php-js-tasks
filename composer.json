@@ -29,6 +29,7 @@
             "arrayReplace/php",
             "binarySearch/php",
             "bishopAndPawn/php",
+            "boxBlur/php",
             "buildPalindrome/php",
             "centuryFromYear/php",
             "checkPalindrome/php",
