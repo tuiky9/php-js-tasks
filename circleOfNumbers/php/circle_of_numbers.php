@@ -1,9 +1,16 @@
 <?php
 
-function circleOfNumbers($n, $firstNumber)
+declare(strict_types=1);
+
+namespace CircleOfNumbers;
+
+class Solution
 {
+    public static function solution($n, $firstNumber)
+    {
 
-    $opposite = $n / 2 + $firstNumber;
+        $opposite = $n / 2 + $firstNumber;
 
-    return $opposite >= $n ? $opposite - $n : $opposite;
+        return $opposite >= $n ? $opposite - $n : $opposite;
+    }
 }

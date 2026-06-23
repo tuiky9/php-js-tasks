@@ -1,34 +1,36 @@
-function isToeplitzMatrix(matrix) {
-    const maxRows = matrix.length;
-    const maxCols = matrix[0].length;
+class Solution {
+    static solution(matrix) {
+        const maxRows = matrix.length;
+        const maxCols = matrix[0].length;
 
-    const isDiagonalConstant = (row, column) => {
-        if (row + 1 >= maxRows || column + 1 >= maxCols) {
-            return true;
+        const isDiagonalConstant = (row, column) => {
+            if (row + 1 >= maxRows || column + 1 >= maxCols) {
+                return true;
+            }
+
+            if (matrix[row][column] !== matrix[row + 1][column + 1]) {
+                return false;
+            }
+
+            return isDiagonalConstant(row + 1, column + 1);
+        };
+
+        for (let column = 0; column < maxCols; column++) {
+            if (!isDiagonalConstant(0, column)) {
+                return false;
+            }
         }
 
-        if (matrix[row][column] !== matrix[row + 1][column + 1]) {
-            return false;
+        for (let row = 0; row < maxRows; row++) {
+            if (!isDiagonalConstant(row, 0)) {
+                return false;
+            }
         }
 
-        return isDiagonalConstant(row + 1, column + 1);
-    };
-
-    for (let column = 0; column < maxCols; column++) {
-        if (!isDiagonalConstant(0, column)) {
-            return false;
-        }
+        return true;
     }
-
-    for (let row = 0; row < maxRows; row++) {
-        if (!isDiagonalConstant(row, 0)) {
-            return false;
-        }
-    }
-
-    return true;
 }
 
 if (typeof module !== 'undefined' && module.exports) {
-    module.exports = { isToeplitzMatrix };
+    module.exports = { Solution };
 }

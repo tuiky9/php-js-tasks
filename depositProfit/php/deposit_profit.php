@@ -1,11 +1,18 @@
 <?php
 
-function depositProfit($deposit, $rate, $threshold)
+declare(strict_types=1);
+
+namespace DepositProfit;
+
+class Solution
 {
-    $i = 0;
-    while ($deposit < $threshold) {
-        $i++;
-        $deposit += $deposit * $rate / 100;
+    public static function solution($deposit, $rate, $threshold)
+    {
+        $i = 0;
+        while ($deposit < $threshold) {
+            $i++;
+            $deposit += $deposit * $rate / 100;
+        }
+        return $i;
     }
-    return $i;
 }

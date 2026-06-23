@@ -1,16 +1,32 @@
 <h2>Add Border</h2>
-<p>source: <a href="https://www.codesignal.com">www.codesignal.com</a></p>
-<div class="markdown"><p>Given a rectangular matrix of characters, add a border of asterisks(<code>*</code>) to it.</p>
+<div class="markdown"><p>You are given a rectangular grid of characters represented as an array of equal-length strings. Surround the entire grid with a one-character-wide frame made of asterisks (<code>*</code>).</p>
 <p><span style="color:#44BFA3;font-size:1.4em">Example</span></p>
 <p>For</p>
-<pre><code>picture = ["abc",
-           "ded"]
+<pre><code>picture = ["a"]
 </code></pre>
 <p>the output should be</p>
-<pre><code>addBorder(picture) = ["*****",
-                      "*abc*",
-                      "*ded*",
-                      "*****"]
+<pre><code>addBorder(picture) = ["***",
+                      "*a*",
+                      "***"]
+</code></pre>
+<p>For</p>
+<pre><code>picture = ["aa", "bb", "cc"]
+</code></pre>
+<p>the output should be</p>
+<pre><code>addBorder(picture) = ["****",
+                      "*aa*",
+                      "*bb*",
+                      "*cc*",
+                      "****"]
+</code></pre>
+<p>For</p>
+<pre><code>picture = ["hello", "world"]
+</code></pre>
+<p>the output should be</p>
+<pre><code>addBorder(picture) = ["*******",
+                      "*hello*",
+                      "*world*",
+                      "*******"]
 </code></pre>
 <p><span style="color:#44BFA3;font-size:1.4em">Input/Output</span></p>
 <ul>
@@ -32,4 +48,4 @@
 </li>
 </ul>
 </div>
-<p><strong>Run test:</strong> <code>../vendor/bin/phpunit -c ../phpunit.xml ./AddBorderTest.php</code></p>
+<p><strong>Run test:</strong> <code>../vendor/bin/phpunit -c ../phpunit.xml php/AddBorderTest.php</code></p>

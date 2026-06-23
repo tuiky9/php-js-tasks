@@ -1,9 +1,14 @@
 <h2>Array Maximal Adjacent Difference</h2>
-<p>source: <a href="https://www.codesignal.com/">codesignal.com</a>
-<div><p>Given an array of integers, find the maximal absolute difference between any two of its adjacent elements.</p>
+<div><p>Given an array of integers, compute the largest absolute difference between any two neighboring elements.</p>
 <p><span style="color:#44BFA3;font-size:1.4em">Example</span></p>
-<p>For <code>inputArray = [2, 4, 1, 0]</code>, the output should be<br>
-<code>arrayMaximalAdjacentDifference(inputArray) = 3</code>.</p>
+<p>For <code>inputArray = [1, 1, 1, 1]</code>, the output should be<br>
+<code>arrayMaximalAdjacentDifference(inputArray) = 0</code>.</p>
+<p>For <code>inputArray = [-1, 4, 10, 3, -2]</code>, the output should be<br>
+<code>arrayMaximalAdjacentDifference(inputArray) = 7</code>.</p>
+<p>For <code>inputArray = [10, -10, 10, -10]</code>, the output should be<br>
+<code>arrayMaximalAdjacentDifference(inputArray) = 20</code>.</p>
+<p>For <code>inputArray = [5, 11, 2, 17]</code>, the output should be<br>
+<code>arrayMaximalAdjacentDifference(inputArray) = 15</code>.</p>
 <p><span style="color:#44BFA3;font-size:1.4em">Input/Output</span></p>
 <ul>
 <li>
@@ -23,4 +28,4 @@
 </li>
 </ul>
 </div>
-<p><strong>Run test:</strong> <code>../vendor/bin/phpunit -c ../phpunit.xml ./ArrayMaximalAdjacentDifferenceTest.php</code></p>
+<p><strong>Run test:</strong> <code>../vendor/bin/phpunit -c ../phpunit.xml php/ArrayMaximalAdjacentDifferenceTest.php</code></p>

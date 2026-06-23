@@ -1,5 +1,4 @@
 <h2>Sudoku</h2>
-<p>source: <a href="https://www.codesignal.com/">codesignal.com</a>
 <div><p><em>Sudoku</em> is a number-placement puzzle. The objective is to fill a <code>9 × 9</code> grid with digits so that each column, each row, and each of the nine <code>3 × 3</code> sub-grids that compose the grid contains all of the digits from <code>1</code> to <code>9</code>.</p>
 <p>This algorithm should check if the given grid of numbers represents a correct solution to Sudoku.</p>
 <p><span style="color:#44BFA3;font-size:1.4em">Example</span></p>
@@ -35,7 +34,7 @@
 <code>sudoku(grid) = false</code>.</p>
 <p>The output should be <code>false</code>: each of the nine <code>3 × 3</code> sub-grids should contain all of the digits from <code>1</code> to <code>9</code>.<br>
 These examples are represented on the image below.</p>
-<p><img src="https://codesignal.s3.amazonaws.com/tasks/sudoku/img/sudoku.png?_tm=1558386773492" alt=""></p>
+<p><img src="img/sudoku.png" alt="Sudoku Image"></p>
 <p><span style="color:#44BFA3;font-size:1.4em">Input/Output</span></p>
 <ul>
 <li>

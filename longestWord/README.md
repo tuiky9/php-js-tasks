@@ -1,9 +1,16 @@
 <h2>Longest World</h2>
-<p>source: <a href="https://www.codesignal.com/">codesignal.com</a>
-<div class="markdown"><p>Define a <em>word</em> as a sequence of consecutive English letters. Find the longest <em>word</em> from the given string.</p>
+<div class="markdown"><p>A <em>word</em> is a maximal run of consecutive English letters. From the given string, return the longest <em>word</em>.</p>
 <p><span style="color:#44BFA3;font-size:1.4em">Example</span></p>
-<p>For <code>text = "Ready, steady, go!"</code>, the output should be<br>
-<code>longestWord(text) = "steady"</code>.</p>
+<ul>
+<li>For <code>text = "To be or not to be"</code>, the output should be<br>
+<code>longestWord(text) = "not"</code>.</li>
+<li>For <code>text = "abc1234567890"</code>, the output should be<br>
+<code>longestWord(text) = "abc"</code>.</li>
+<li>For <code>text = "A!!! aa"</code>, the output should be<br>
+<code>longestWord(text) = "aa"</code>.</li>
+<li>For <code>text = "Ready[[[, steady, go!"</code>, the output should be<br>
+<code>longestWord(text) = "steady"</code>.</li>
+</ul>
 <p><span style="color:#44BFA3;font-size:1.4em">Input/Output</span></p>
 <ul>
 <li>
@@ -17,9 +24,9 @@
 <li>
 <p><strong>[output] string</strong></p>
 <ul>
-<li>The longest <em>word</em> from <code>text</code>. It's guaranteed that there is a unique output.</li>
+<li>The longest <em>word</em> in <code>text</code>. The answer is guaranteed to be unique.</li>
 </ul>
 </li>
 </ul>
 </div>
-<p><strong>Run test:</strong> <code>../vendor/bin/phpunit -c ../phpunit.xml ./LongestWordTest.php</code></p>
+<p><strong>Run test:</strong> <code>../vendor/bin/phpunit -c ../phpunit.xml php/LongestWordTest.php</code></p>

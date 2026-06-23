@@ -1,11 +1,12 @@
 <h2>Variable Name</h2>
-<p>source: <a href="https://www.codesignal.com/">codesignal.com</a>
-<div class="markdown"><p>Correct variable names consist only of English letters, digits and underscores and they can't start with a digit.</p>
-<p>Check if the given string is a correct variable name.</p>
+<div class="markdown"><p>A valid variable name contains only English letters, digits, and underscores, and cannot start with a digit.</p>
+<p>Check whether the given string is a valid variable name.</p>
 <p><span style="color:#44BFA3;font-size:1.4em">Example</span></p>
 <ul>
-<li>For <code>name = "var_1__Int"</code>, the output should be<br>
+<li>For <code>name = "_Aas_23"</code>, the output should be<br>
 <code>variableName(name) = true</code>;</li>
+<li>For <code>name = " variable"</code>, the output should be<br>
+<code>variableName(name) = false</code>;</li>
 <li>For <code>name = "qq-q"</code>, the output should be<br>
 <code>variableName(name) = false</code>;</li>
 <li>For <code>name = "2w2"</code>, the output should be<br>
@@ -24,9 +25,9 @@
 <li>
 <p><strong>[output] boolean</strong></p>
 <ul>
-<li><code>true</code> if <code>name</code> is a correct variable name, <code>false</code> otherwise.</li>
+<li><code>true</code> if <code>name</code> is a valid variable name, <code>false</code> otherwise.</li>
 </ul>
 </li>
 </ul>
 </div>
-<p><strong>Run test:</strong> <code>../vendor/bin/phpunit -c ../phpunit.xml ./VariableNameTest.php</code></p>
+<p><strong>Run test:</strong> <code>../vendor/bin/phpunit -c ../phpunit.xml php/VariableNameTest.php</code></p>

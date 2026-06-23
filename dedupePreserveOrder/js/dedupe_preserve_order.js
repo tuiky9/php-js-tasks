@@ -1,4 +1,5 @@
-function dedupePreserveOrder(items) {
+class Solution {
+    static solution(items) {
     const seen = [];
     const result = [];
 
@@ -11,4 +12,9 @@ function dedupePreserveOrder(items) {
     }
 
     return result;
+}
+}
+
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = { Solution };
 }

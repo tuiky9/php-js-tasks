@@ -1,5 +1,4 @@
 <h2>Digit Degree</h2>
-source: <a href="https://www.codesignal.com/">www.codesignal.com</a>
 <div class="markdown"><p>Let's define <em>digit degree</em> of some positive integer as the number of times we need to replace this number with the sum of its digits until we get to a one digit number.</p>
 <p>Given an integer, find its digit degree.</p>
 <p><span style="color:#44BFA3;font-size:1.4em">Example</span></p>

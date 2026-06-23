@@ -1,7 +1,13 @@
 <?php
 
-class Solution {
-    public static function countLessThan($matrix, $target) {
+declare(strict_types=1);
+
+namespace CountLessThanMatrix;
+
+class Solution
+{
+    public static function solution($matrix, $target)
+    {
         $rows = count($matrix);
 
         if ($rows === 0) {

@@ -1,23 +1,27 @@
 <h2>Knapsack Light</h2>
-<p>source: <a href="https://www.codesignal.com/">codesignal.com</a>
-<div><p>You found two items in a treasure chest! The first item weighs <code>weight1</code> and is worth <code>value1</code>, and the second item weighs <code>weight2</code> and is worth <code>value2</code>. What is the total maximum value of the items you can take with you, assuming that your max weight capacity is <code>maxW</code> and you can't come back for the items later?</p>
-<p><strong>Note</strong> that there are only two items and you can't bring more than one item of each type, i.e. you can't take two first items or two second items.</p>
+<div><p>You discover two treasures in a chest. The first weighs <code>weight1</code> and has value <code>value1</code>; the second weighs <code>weight2</code> and has value <code>value2</code>. Your backpack holds at most <code>maxW</code> units of weight, and you must leave the chest for good — what is the greatest total value you can carry?</p>
+<p><strong>Remember:</strong> there are exactly two distinct items. You may take zero, one, or both, but never two copies of the same item.</p>
 <p><span style="color:#44BFA3;font-size:1.4em">Example</span></p>
 <ul>
 <li>
-<p>For <code>value1 = 10</code>, <code>weight1 = 5</code>, <code>value2 = 6</code>, <code>weight2 = 4</code>, and <code>maxW = 8</code>, the output should be<br>
-<code>knapsackLight(value1, weight1, value2, weight2, maxW) = 10</code>.</p>
-<p>You can only carry the first item.</p>
+<p>For <code>value1 = 5</code>, <code>weight1 = 3</code>, <code>value2 = 7</code>, <code>weight2 = 4</code>, and <code>maxW = 2</code>, the output should be<br>
+<code>knapsackLight(value1, weight1, value2, weight2, maxW) = 0</code>.</p>
+<p>Neither item fits in your backpack.</p>
+</li>
+<li>
+<p>For <code>value1 = 3</code>, <code>weight1 = 1</code>, <code>value2 = 2</code>, <code>weight2 = 2</code>, and <code>maxW = 2</code>, the output should be<br>
+<code>knapsackLight(value1, weight1, value2, weight2, maxW) = 3</code>.</p>
+<p>Both items fit, so take them both.</p>
 </li>
 <li>
 <p>For <code>value1 = 10</code>, <code>weight1 = 5</code>, <code>value2 = 6</code>, <code>weight2 = 4</code>, and <code>maxW = 9</code>, the output should be<br>
 <code>knapsackLight(value1, weight1, value2, weight2, maxW) = 16</code>.</p>
-<p>You're strong enough to take both of the items with you.</p>
+<p>Your capacity is enough for both items.</p>
 </li>
 <li>
 <p>For <code>value1 = 5</code>, <code>weight1 = 3</code>, <code>value2 = 7</code>, <code>weight2 = 4</code>, and <code>maxW = 6</code>, the output should be<br>
 <code>knapsackLight(value1, weight1, value2, weight2, maxW) = 7</code>.</p>
-<p>You can't take both items, but you can take any of them.</p>
+<p>Both together are too heavy; pick the more valuable single item.</p>
 </li>
 </ul>
 <p><span style="color:#44BFA3;font-size:1.4em">Input/Output</span></p>
@@ -55,4 +59,4 @@
 </li>
 </ul>
 </div>
-<p><strong>Run test:</strong> <code>../vendor/bin/phpunit -c ../phpunit.xml ./KnapsackLightTest.php</code></p>
+<p><strong>Run test:</strong> <code>../vendor/bin/phpunit -c ../phpunit.xml php/KnapsackLightTest.php</code></p>

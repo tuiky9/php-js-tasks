@@ -2,14 +2,14 @@
 
 ## Task
 
-Given an array, return a new array with **duplicate values removed**, keeping the **first** occurrence of each value and preserving the relative order of the remaining items.
+From an input array, build a new array with **duplicate values removed**. Keep only the **first** appearance of each value and maintain the relative order of everything that remains.
 
 ## Rules
 
-- Compare values with **strict** equality (`===`).
-- Keep the first time each value appears; drop later duplicates.
-- Return a **zero-indexed** list (`array_values` style): keys must be `0, 1, 2, …`.
-- Do not modify the input array.
+- Compare elements with **strict** equality (`===`).
+- On repeated values, keep the earliest occurrence and discard later ones.
+- Return a **zero-indexed** list (`array_values` style): keys must run `0, 1, 2, …`.
+- Leave the original input array unchanged.
 
 ## Input
 
@@ -17,41 +17,40 @@ Given an array, return a new array with **duplicate values removed**, keeping th
 
 ## Output
 
-- A new array with duplicates removed, first occurrence kept, reindexed from `0`.
+- A new array with duplicates removed, first occurrences kept, reindexed from `0`.
 
 ## Examples
 
 | Input | Output |
 |-------|--------|
-| `[3, 1, 3, 2, 1]` | `[3, 1, 2]` |
-| `['a', 'b', 'a']` | `['a', 'b']` |
-| `[1, 2, 3]` | `[1, 2, 3]` |
-| `[]` | `[]` |
+| `[5, 4, 5, 3, 4, 2]` | `[5, 4, 3, 2]` |
+| `[0, 0, 0]` | `[0]` |
+| `[null, false, null, false]` | `[null, false]` |
+| `[1.0, 1, 1.0]` | `[1.0, 1]` |
 
 ```text
-Input:  [3, 1, 3, 2, 1]
-Output: [3, 1, 2]
+Input:  [42]
+Output: [42]
 ```
 
 ```text
-Input:  [true, true, false]
-Output: [true, false]
+Input:  ['x' => 'a', 'y' => 'b', 'z' => 'a']
+Output: ['a', 'b']
 ```
 
-```text
-Input:  [1, '1']
-Output: [1, '1']
-```
-
-(`1` and `'1'` are different under strict comparison.)
+(Associative keys in the input are ignored; the output is a plain indexed list.)
 
 ## Function signature
 
 ```php
-function dedupePreserveOrder(array $items): array
+class Solution {
+    public static function solution(...)
+}
 ```
 
 Implement this function in `php/dedupe_preserve_order.php`.
+
+Call the solution with `Solution::solution(...)`.
 
 ## Run tests
 
@@ -64,7 +63,7 @@ composer install
 From this task directory (`dedupePreserveOrder`), run PHPUnit:
 
 ```bash
-../vendor/bin/phpunit -c ../phpunit.xml ./DedupePreserveOrderTest.php
+../vendor/bin/phpunit -c ../phpunit.xml php/DedupePreserveOrderTest.php
 ```
 
-<p><strong>Run test:</strong> <code>../vendor/bin/phpunit -c ../phpunit.xml ./DedupePreserveOrderTest.php</code></p>
+<p><strong>Run test:</strong> <code>../vendor/bin/phpunit -c ../phpunit.xml php/DedupePreserveOrderTest.php</code></p>

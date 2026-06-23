@@ -4,19 +4,19 @@
 
 You are given a rectangular matrix of integers with these ordering properties:
 
-- Each **row** is sorted in **non-decreasing** order (left to right).
-- Each **column** is sorted in **non-decreasing** order (top to bottom).
+- Every **row** is sorted in **non-decreasing** order (values do not decrease left to right).
+- Every **column** is sorted in **non-decreasing** order (values do not decrease top to bottom).
 
-Because of this structure, values generally **increase** as you move **right** or **down**, and **decrease** as you move **left** or **up**.
+Because of this layout, values tend to grow as you move right or down and shrink as you move left or up.
 
-Given such a matrix and an integer **target**, count how many values in the matrix are **strictly less than** `target`.
+For a given integer **target**, count how many matrix entries are **strictly less than** `target`.
 
 ## Rules
 
-- Count only values where `matrix[row][col] < target` (equal values are **not** counted).
+- Include only cells where `matrix[row][col] < target` (values equal to `target` are excluded).
 - Return `0` for an empty matrix or a matrix with zero columns.
-- Expected time complexity: **O(n + m)**, where `n` is the number of rows and `m` is the number of columns.
-- A common approach is to start from the **bottom-left** corner and walk toward the top or right.
+- Expected time complexity: **O(n + m)**, where `n` is the row count and `m` is the column count.
+- A typical strategy starts at the **bottom-left** corner and walks toward the top or right.
 
 ## Input
 
@@ -25,68 +25,68 @@ Given such a matrix and an integer **target**, count how many values in the matr
 
 ## Output
 
-- Integer count of matrix elements strictly less than `$target`.
+- Integer count of elements strictly below `$target`.
 
 ## Examples
 
-Given matrix:
-
 ```text
-[
-  [1, 2, 3, 4],
-  [2, 3, 4, 5],
-  [3, 4, 5, 6],
-  [4, 5, 6, 7]
-]
+Input:  matrix = [[4]], target = 5
+Output: 1
 ```
 
-and `target = 5`, return `10` because these values are less than `5`:
-
-`1, 2, 3, 4, 2, 3, 4, 3, 4, 4`
-
 ```text
-Input:  matrix = [[1, 4], [2, 5]], target = 3
+Input:  matrix = [[-5, 0], [1, 3]], target = 1
 Output: 2
 ```
 
-(Values `1` and `2` are less than `3`.)
+(Values `-5` and `0` are strictly less than `1`.)
 
 ```text
-Input:  matrix = [[5, 6], [7, 8]], target = 5
-Output: 0
+Input:  matrix = [[1, 2, 2], [2, 3, 4]], target = 2
+Output: 1
 ```
 
-(No value is strictly less than `5`.)
+(Only the single `1` counts; equal values are excluded.)
 
 ```text
-Input:  matrix = [[1, 2], [3, 4]], target = 10
-Output: 4
+Input:  matrix = [[1, 3, 5, 7]], target = 5
+Output: 2
 ```
 
-(All four values are less than `10`.)
+(Values `1` and `3` are less than `5`.)
 
 ## Function signature
 
 ```php
 class Solution {
-    public static function countLessThan($matrix, $target): int
+    public static function solution(...)
 }
 ```
 
 Implement in `php/count_less_than_matrix.php`.
 
+Call the solution with `Solution::solution(...)`.
+
 ```javascript
-function countLessThan(matrix, target)
+class Solution {
+    static solution(...)
+}
 ```
 
 Implement in `js/count_less_than_matrix.js`.
 
 ## Run tests
 
+From the repository root, install dependencies once:
+
+```bash
+composer install
+```
+
 From this task directory (`countLessThanMatrix`), run PHPUnit:
 
 ```bash
-../vendor/bin/phpunit -c ../phpunit.xml ./CountLessThanMatrixTest.php
+../vendor/bin/phpunit -c ../phpunit.xml php/CountLessThanMatrixTest.php
 ```
 
-<p><strong>Run test:</strong> <code>../vendor/bin/phpunit -c ../phpunit.xml ./CountLessThanMatrixTest.php</code></p>
+<p><strong>Run test:</strong> <code>../vendor/bin/phpunit -c ../phpunit.xml php/CountLessThanMatrixTest.php</code></p>

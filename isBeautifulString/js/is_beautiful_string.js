@@ -1,4 +1,5 @@
-function isBeautifulString(inputString) {
+class Solution {
+    static solution(inputString) {
     
     return Object.values(inputString.split('').sort().reduce((a,v,i,arr) => {
         if(v == arr[i-1]){
@@ -19,4 +20,9 @@ function isBeautifulString(inputString) {
     }, {"a":0})).filter((v,i,arr) => v > arr[i-1]).length === 0;
     
 
+}
+}
+
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = { Solution };
 }

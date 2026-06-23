@@ -2,17 +2,19 @@
 
 ## Task
 
-You are given a string that contains only **digits** (`0`–`9`).
+You are given a string containing only **digits** (`0`–`9`).
 
-Reorder the string by **pairing characters from both ends** and writing each pair in order:
+Rebuild the string by **pairing characters from opposite ends**, writing each pair left to right:
 
-1. Take the first character and the last character, append them (first, then last).
-2. Take the second character and the second-to-last character, append them the same way.
-3. Continue until the whole string is processed.
+1. Take the first and last characters and append them (first, then last).
+2. Take the second and second-to-last characters the same way.
+3. Repeat until every character is placed.
 
-If the string has an **odd** length, the middle character has no partner — leave it in the middle of the result unchanged.
+If the length is **odd**, the center character has no partner — it stays in the middle of the result.
 
-Implement this using **recursion** (not a loop).
+Solve this with **recursion** (no loops).
+
+Call the solution with `Solution::solution(...)`.
 
 ## Input
 
@@ -20,33 +22,35 @@ Implement this using **recursion** (not a loop).
 
 ## Output
 
-- A string of the same length with the pairing rule applied.
+- A string of the same length after applying the pairing rule.
 
 ## Examples
 
 | Input | Output | Explanation |
 |-------|--------|-------------|
-| `"abc789"` | `"a9b8c7"` | Pairs: `a`+`9`, `b`+`8`, `c`+`7` |
-| `"abc"` | `"acb"` | Pairs: `a`+`c`; middle `b` stays |
-| `"12"` | `"12"` | Single pair: `1` then `2` |
-| `"5"` | `"5"` | One character, unchanged |
-
-```text
-Input:  "abc789"
-Output: "a9b8c7"
-```
+| `"1234"` | `"1423"` | Pairs: `1`+`4`, `2`+`3` |
+| `"246813"` | `"234168"` | Pairs: `2`+`3`, `4`+`1`, `6`+`8` |
+| `"1234567"` | `"1726354"` | Pairs: `1`+`7`, `2`+`6`, `3`+`5`; middle `4` stays |
+| `"1111"` | `"1111"` | All pairs are `1`+`1` |
 
 ```text
 Input:  "abcde"
 Output: "aebdc"
 ```
 
-Pairs: `a`+`e`, `b`+`d`, middle `c` unchanged → `ae` + `bdc` = `aebdc`.
+Pairs: `a`+`e`, `b`+`d`; middle `c` unchanged.
+
+```text
+Input:  ""
+Output: ""
+```
 
 ## Function signature
 
 ```php
-function solve(string $s): string
+class Solution {
+    public static function solution(...)
+}
 ```
 
 Implement this function in `php/pairing_chars_recursively.php`.
@@ -62,7 +66,7 @@ composer install
 From this task directory (`pairingCharsRecursively`), run PHPUnit:
 
 ```bash
-../vendor/bin/phpunit -c ../phpunit.xml ./PairingCharsRecursivelyTest.php
+../vendor/bin/phpunit -c ../phpunit.xml php/PairingCharsRecursivelyTest.php
 ```
 
-<p><strong>Run test:</strong> <code>../vendor/bin/phpunit -c ../phpunit.xml ./PairingCharsRecursivelyTest.php</code></p>
+<p><strong>Run test:</strong> <code>../vendor/bin/phpunit -c ../phpunit.xml php/PairingCharsRecursivelyTest.php</code></p>

@@ -1,16 +1,17 @@
 <h2>Is MAC 48 Address</h2>
-<p>source: <a href="https://www.codesignal.com/">codesignal.com</a>
-<div class="markdown"><p>A media access control address (MAC address) is a unique identifier assigned to network interfaces for communications on the physical network segment.</p>
-<p>The standard (IEEE 802) format for printing MAC-48 addresses in human-friendly form is six groups of two hexadecimal digits (<code>0</code> to <code>9</code> or <code>A</code> to <code>F</code>), separated by hyphens (e.g. <code>01-23-45-67-89-AB</code>).</p>
-<p>Your task is to check by given string <code>inputString</code> whether it corresponds to MAC-48 address or not.</p>
+<div class="markdown"><p>A MAC (media access control) address uniquely identifies a network interface on a physical network segment.</p>
+<p>Under the IEEE 802 standard, a MAC-48 address is written as six pairs of hexadecimal digits (<code>0</code>–<code>9</code> or <code>A</code>–<code>F</code>), with hyphens between each pair — for example, <code>01-23-45-67-89-AB</code>.</p>
+<p>Given a string <code>inputString</code>, determine whether it follows the MAC-48 formatting rules.</p>
 <p><span style="color:#44BFA3;font-size:1.4em">Example</span></p>
 <ul>
-<li>For <code>inputString = "00-1B-63-84-45-E6"</code>, the output should be<br>
+<li>For <code>inputString = "FF-FF-FF-FF-FF-FF"</code>, the output should be<br>
 <code>isMAC48Address(inputString) = true</code>;</li>
+<li>For <code>inputString = "00-00-00-00-00-0"</code>, the output should be<br>
+<code>isMAC48Address(inputString) = false</code>;</li>
 <li>For <code>inputString = "Z1-1B-63-84-45-E6"</code>, the output should be<br>
 <code>isMAC48Address(inputString) = false</code>;</li>
-<li>For <code>inputString = "not a MAC-48 address"</code>, the output should be<br>
-<code>isMAC48Address(inputString) = false</code>.</li>
+<li>For <code>inputString = "00-1B-63-84-45-E6"</code>, the output should be<br>
+<code>isMAC48Address(inputString) = true</code>.</li>
 </ul>
 <p><span style="color:#44BFA3;font-size:1.4em">Input/Output</span></p>
 <ul>
@@ -25,9 +26,9 @@
 <li>
 <p><strong>[output] boolean</strong></p>
 <ul>
-<li><code>true</code> if <code>inputString</code> corresponds to MAC-48 address naming rules, <code>false</code> otherwise.</li>
+<li><code>true</code> if <code>inputString</code> is a valid MAC-48 address, <code>false</code> otherwise.</li>
 </ul>
 </li>
 </ul>
 </div>
-<p><strong>Run test:</strong> <code>../vendor/bin/phpunit -c ../phpunit.xml ./IsMAC48AddressTest.php</code></p>
+<p><strong>Run test:</strong> <code>../vendor/bin/phpunit -c ../phpunit.xml php/IsMAC48AddressTest.php</code></p>

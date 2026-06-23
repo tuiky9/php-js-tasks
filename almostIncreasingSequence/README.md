@@ -1,18 +1,22 @@
 <h2>Almost Increasing Sequence</h2>
-<p>source: <a href="https://www.codesignal.com/">codesignal.com</a>
-<div><p>Given a sequence of integers as an array, determine whether it is possible to obtain a strictly increasing sequence by removing no more than one element from the array.</p>
-<p><em>Note:</em> sequence <code>a<sub>0</sub></code>, <code>a<sub>1</sub></code>, ..., <code>a<sub>n</sub></code> is considered to be a strictly increasing if <code>a<sub>0</sub> &lt; a<sub>1</sub> &lt; ... &lt; a<sub>n</sub></code>. Sequence containing only one element is also considered to be strictly increasing.</p>
+<div><p>You are given an array of integers. Decide whether you can delete at most one element so that the remaining values form a strictly increasing sequence.</p>
+<p><em>Note:</em> a sequence <code>a<sub>0</sub></code>, <code>a<sub>1</sub></code>, ..., <code>a<sub>n</sub></code> is strictly increasing when <code>a<sub>0</sub> &lt; a<sub>1</sub> &lt; ... &lt; a<sub>n</sub></code>. A sequence with one element counts as strictly increasing.</p>
 <p><span style="color:#2b3b52;font-size:1.4em">Example</span></p>
 <ul>
 <li>
-<p>For <code>sequence = [1, 3, 2, 1]</code>, the output should be<br>
-<code>almostIncreasingSequence(sequence) = false</code>.</p>
-<p>There is no one element in this array that can be removed in order to get a strictly increasing sequence.</p>
+<p>For <code>sequence = [1, 2, 3, 4]</code>, the output should be<br>
+<code>almostIncreasingSequence(sequence) = true</code>.</p>
+<p>The array is already strictly increasing, so no removal is needed.</p>
 </li>
 <li>
-<p>For <code>sequence = [1, 3, 2]</code>, the output should be<br>
+<p>For <code>sequence = [10, 1, 2, 3, 4, 5]</code>, the output should be<br>
 <code>almostIncreasingSequence(sequence) = true</code>.</p>
-<p>You can remove <code>3</code> from the array to get the strictly increasing sequence <code>[1, 2]</code>. Alternately, you can remove <code>2</code> to get the strictly increasing sequence <code>[1, 3]</code>.</p>
+<p>Removing <code>10</code> leaves <code>[1, 2, 3, 4, 5]</code>, which is strictly increasing.</p>
+</li>
+<li>
+<p>For <code>sequence = [1, 1, 2, 3]</code>, the output should be<br>
+<code>almostIncreasingSequence(sequence) = true</code>.</p>
+<p>Removing one of the duplicate <code>1</code>s produces a valid strictly increasing sequence.</p>
 </li>
 </ul>
 <p><span style="color:#2b3b52;font-size:1.4em">Input/Output</span></p>
@@ -34,4 +38,4 @@
 </li>
 </ul>
 </div>
-<p><strong>Run test:</strong> <code>../vendor/bin/phpunit -c ../phpunit.xml ./AlmostIncreasingSequenceTest.php</code></p>
+<p><strong>Run test:</strong> <code>../vendor/bin/phpunit -c ../phpunit.xml php/AlmostIncreasingSequenceTest.php</code></p>

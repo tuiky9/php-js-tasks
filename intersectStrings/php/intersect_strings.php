@@ -1,9 +1,13 @@
 <?php
 
+declare(strict_types=1);
+
+namespace IntersectStrings;
+
 class Solution
 {
     public static function solution($string1, $string2)
-    {               
+    {
         $charCount = [];
 
         for ($i = 0; $i < strlen($string2); $i++) {

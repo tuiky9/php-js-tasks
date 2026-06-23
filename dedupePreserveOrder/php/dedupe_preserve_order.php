@@ -1,22 +1,29 @@
 <?php
 
+declare(strict_types=1);
+
+namespace DedupePreserveOrder;
+
 /*
 PHP Task: Remove duplicates while preserving first occurrence order (strict ===).
 */
 
-function dedupePreserveOrder(array $items): array
+class Solution
 {
-    $seen = [];
-    $result = [];
+    public static function solution(array $items): array
+    {
+        $seen = [];
+        $result = [];
 
-    foreach ($items as $item) {
-        if (in_array($item, $seen, true)) {
-            continue;
+        foreach ($items as $item) {
+            if (in_array($item, $seen, true)) {
+                continue;
+            }
+
+            $seen[] = $item;
+            $result[] = $item;
         }
 
-        $seen[] = $item;
-        $result[] = $item;
+        return $result;
     }
-
-    return $result;
 }

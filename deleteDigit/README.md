@@ -1,5 +1,4 @@
 <h2>Delete Digit</h2>
-<p>source: <a href="https://www.codesignal.com/">codesignal.com</a>
 <div><p>Given some integer, find the maximal number you can obtain by deleting exactly one digit of the given number.</p>
 <p><span style="color:#44BFA3;font-size:1.4em">Example</span></p>
 <ul>

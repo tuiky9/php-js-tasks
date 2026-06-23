@@ -1,19 +1,20 @@
 <h2>Bishop and Pawn</h2>
-source: <a href="https://www.codesignal.com/">www.codesignal.com</a>
-<div class="markdown"><p>Given the positions of a white <code>bishop</code> and a black <code>pawn</code> on the standard chess board, determine whether the bishop can capture the pawn in one move.</p>
-<p>The bishop has no restrictions in distance for each move, but is limited to diagonal movement. Check out the example below to see how it can move:<br>
-https://codesignal.s3.amazonaws.com/tasks/bishopAndPawn/img/bishop.jpg?_tm=1551432802825</p>
+<div class="markdown"><p>On a standard 8×8 chess board, a white <code>bishop</code> and a black <code>pawn</code> occupy two squares. Decide whether the bishop can take the pawn in a single move.</p>
+<p>Bishops move any number of squares along a diagonal (no jumping over pieces is relevant here—only whether the pawn lies on the bishop's diagonal). The diagram shows valid bishop paths:</p>
+<p><img src="img/bishop.jpg" alt="Bishop movement"></p>
 <p><span style="color:#44BFA3;font-size:1.4em">Example</span></p>
 <ul>
 <li>
-<p>For <code>bishop = "a1"</code> and <code>pawn = "c3"</code>, the output should be<br>
+<p>For <code>bishop = "f1"</code> and <code>pawn = "a6"</code>, the output should be<br>
 <code>bishopAndPawn(bishop, pawn) = true</code>.</p>
-<p>https://codesignal.s3.amazonaws.com/tasks/bishopAndPawn/img/ex1.jpg?_tm=1551432803102</p>
 </li>
 <li>
-<p>For <code>bishop = "h1"</code> and <code>pawn = "h3"</code>, the output should be<br>
+<p>For <code>bishop = "g1"</code> and <code>pawn = "f3"</code>, the output should be<br>
 <code>bishopAndPawn(bishop, pawn) = false</code>.</p>
-<p>https://codesignal.s3.amazonaws.com/tasks/bishopAndPawn/img/ex2.jpg?_tm=1551432803350</p>
+</li>
+<li>
+<p>For <code>bishop = "c1"</code> and <code>pawn = "f4"</code>, the output should be<br>
+<code>bishopAndPawn(bishop, pawn) = true</code>.</p>
 </li>
 </ul>
 <p><span style="color:#44BFA3;font-size:1.4em">Input/Output</span></p>
@@ -23,7 +24,7 @@ https://codesignal.s3.amazonaws.com/tasks/bishopAndPawn/img/bishop.jpg?_tm=15514
 </li>
 <li>
 <p><strong>[input] string bishop</strong></p>
-<p>Coordinates of the white bishop in the <a href="keyword://chess-notation" target="_blank">chess notation</a>.</p>
+<p>Location of the white bishop in <a href="keyword://chess-notation" target="_blank">chess notation</a> (file letter + rank digit).</p>
 <p><em>Guaranteed constraints:</em><br>
 <code>bishop.length = 2</code>,<br>
 <code>'a' ≤ bishop[0] ≤ 'h'</code>,<br>
@@ -31,7 +32,7 @@ https://codesignal.s3.amazonaws.com/tasks/bishopAndPawn/img/bishop.jpg?_tm=15514
 </li>
 <li>
 <p><strong>[input] string pawn</strong></p>
-<p>Coordinates of the black pawn in the same notation.</p>
+<p>Location of the black pawn, using the same notation.</p>
 <p><em>Guaranteed constraints:</em><br>
 <code>pawn.length = 2</code>,<br>
 <code>'a' ≤ pawn[0] ≤ 'h'</code>,<br>
@@ -40,9 +41,9 @@ https://codesignal.s3.amazonaws.com/tasks/bishopAndPawn/img/bishop.jpg?_tm=15514
 <li>
 <p><strong>[output] boolean</strong></p>
 <ul>
-<li><code>true</code> if the bishop can capture the pawn, <code>false</code> otherwise.</li>
+<li><code>true</code> if the bishop can capture the pawn in one move, <code>false</code> otherwise.</li>
 </ul>
 </li>
 </ul>
 </div>
-<p><strong>Run test:</strong> <code>../vendor/bin/phpunit -c ../phpunit.xml ./BishopAndPawnTest.php</code></p>
+<p><strong>Run test:</strong> <code>../vendor/bin/phpunit -c ../phpunit.xml php/BishopAndPawnTest.php</code></p>

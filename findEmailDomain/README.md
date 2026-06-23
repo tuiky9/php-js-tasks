@@ -1,28 +1,70 @@
-<h2>Find Email Domain</h2>
-<p>source: <a href="https://www.codesignal.com/">codesignal.com</a>
-<div><p>An email address such as <code>"John.Smith@example.com"</code> is made up of a local part (<code>"John.Smith"</code>), an <code>"@"</code> symbol, then a domain part (<code>"example.com"</code>).</p>
-<p>The domain name part of an email address may only consist of letters, digits, hyphens and dots. The local part, however, also allows a lot of different special characters. <a href="https://en.wikipedia.org/wiki/Email_address#Examples" target="_blank">Here</a> you can look at several examples of correct and incorrect email addresses.</p>
-<p>Given a valid email address, find its domain part.</p>
-<p><span style="color:#44BFA3;font-size:1.4em">Example</span></p>
-<ul>
-<li>For <code>address = "prettyandsimple@example.com"</code>, the output should be<br>
-<code>findEmailDomain(address) = "example.com"</code>;</li>
-<li>For <code>address = "fully-qualified-domain@codesignal.com"</code>, the output should be<br>
-<code>findEmailDomain(address) = "codesignal.com"</code>.</li>
-</ul>
-<p><span style="color:#44BFA3;font-size:1.4em">Input/Output</span></p>
-<ul>
-<li>
-<p><strong>[execution time limit] 4 seconds (js)</strong></p>
-</li>
-<li>
-<p><strong>[input] string address</strong></p>
-<p><em>Guaranteed constraints:</em><br>
-<code>10 ≤ address.length ≤ 50</code>.</p>
-</li>
-<li>
-<p><strong>[output] string</strong></p>
-</li>
-</ul>
-</div>
-<p><strong>Run test:</strong> <code>../vendor/bin/phpunit -c ../phpunit.xml ./FindEmailDomainTest.php</code></p>
+# Find Email Domain
+
+## Task
+
+An email address has three parts: a **local part**, an `@` symbol, and a **domain part**.
+
+Example shape: `"John.Smith@example.com"` → local `"John.Smith"`, domain `"example.com"`.
+
+The local part may contain many special characters; the domain part uses letters, digits, hyphens, and dots. You are given a **valid** email address. Extract and return its domain (everything after the **last** `@`).
+
+## Input
+
+- `address` — a valid email address string (`10 ≤ address.length ≤ 50`).
+
+## Output
+
+A string: the domain portion of the address.
+
+## Examples
+
+| address | Output |
+|---------|--------|
+| `"someaddress@yandex.ru"` | `"yandex.ru"` |
+| `"admin@mailserver2"` | `"mailserver2"` |
+| `'"very.unusual.@.unusual.com"@usual.com'` | `"usual.com"` |
+
+```text
+Input:  address = "someaddress@yandex.ru"
+Output: yandex.ru
+```
+
+```text
+Input:  address = "admin@mailserver2"
+Output: mailserver2
+```
+
+```text
+Input:  address = "\"very.unusual.@.unusual.com\"@usual.com"
+Output: usual.com
+```
+
+(The local part is quoted; the domain is still `usual.com`.)
+
+## Function signature
+
+```php
+class Solution {
+    public static function solution(...)
+}
+```
+
+Implement in `php/find_email_domain.php`.
+
+Call the solution with `Solution::solution(...)`.
+
+## Run tests
+
+From the repository root, install dependencies once:
+
+```bash
+composer install
+```
+
+From this task directory (`findEmailDomain`), run PHPUnit:
+
+```bash
+../vendor/bin/phpunit -c ../phpunit.xml php/FindEmailDomainTest.php
+```
+
+<p><strong>Run test:</strong> <code>../vendor/bin/phpunit -c ../phpunit.xml php/FindEmailDomainTest.php</code></p>

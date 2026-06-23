@@ -1,5 +1,4 @@
 <h2>Different Squares</h2>
-<p>source: <a href="https://www.codesignal.com/">codesignal.com</a>
 <div class="markdown"><p>Given a rectangular matrix containing only digits, calculate the number of different <code>2 × 2</code> squares in it.</p>
 <p><span style="color:#44BFA3;font-size:1.4em">Example</span></p>
 <p>For</p>

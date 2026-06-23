@@ -1,4 +1,5 @@
-function lineEncoding(s) {
+class Solution {
+    static solution(s) {
     return s.split('').reduce((a, v, i, arr) => {
         if (arr[i - 1] === v) {
             if (!isNaN(parseInt(a.slice(-2, -1)))) {
@@ -11,4 +12,9 @@ function lineEncoding(s) {
         }
         return a;
     });
+}
+}
+
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = { Solution };
 }

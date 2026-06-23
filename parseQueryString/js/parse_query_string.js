@@ -1,29 +1,35 @@
-function parseQueryString(query) {
-    query = query.replace(/^\?/, '');
+class Solution {
+    static solution(query) {
+        query = query.replace(/^\?/, '');
 
-    if (query === '') {
-        return {};
-    }
-
-    const result = {};
-
-    for (const pair of query.split('&')) {
-        if (pair === '') {
-            continue;
+        if (query === '') {
+            return {};
         }
 
-        const equalsPos = pair.indexOf('=');
+        const result = {};
 
-        if (equalsPos === -1) {
-            result[decodePlus(pair)] = '';
-        } else {
-            result[decodePlus(pair.slice(0, equalsPos))] = decodePlus(pair.slice(equalsPos + 1));
+        for (const pair of query.split('&')) {
+            if (pair === '') {
+                continue;
+            }
+
+            const equalsPos = pair.indexOf('=');
+
+            if (equalsPos === -1) {
+                result[Solution.decodePlus(pair)] = '';
+            } else {
+                result[Solution.decodePlus(pair.slice(0, equalsPos))] = Solution.decodePlus(pair.slice(equalsPos + 1));
+            }
         }
+
+        return result;
     }
 
-    return result;
+    static decodePlus(str) {
+        return decodeURIComponent(str.replace(/\+/g, ' '));
+    }
 }
 
-function decodePlus(str) {
-    return decodeURIComponent(str.replace(/\+/g, ' '));
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = { Solution };
 }

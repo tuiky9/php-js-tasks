@@ -1,4 +1,5 @@
-function matrixElementsSum(matrix) {
+class Solution {
+    static solution(matrix) {
     const index = [];
     let sum = 0;
 
@@ -15,4 +16,9 @@ function matrixElementsSum(matrix) {
     }
 
     return sum;
+}
+}
+
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = { Solution };
 }

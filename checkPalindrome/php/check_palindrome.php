@@ -1,7 +1,14 @@
 <?php
 
-function checkPalindrome($inputString)
-{
+declare(strict_types=1);
 
-    return $inputString === implode('', array_reverse(str_split($inputString)));
+namespace CheckPalindrome;
+
+class Solution
+{
+    public static function solution($inputString)
+    {
+
+        return $inputString === implode('', array_reverse(str_split($inputString)));
+    }
 }

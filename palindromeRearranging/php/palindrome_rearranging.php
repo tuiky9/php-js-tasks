@@ -1,14 +1,21 @@
 <?php
 
-function palindromeRearranging($inputString)
-{
-    $oc = 0;
-    $p = array_count_values(str_split($inputString));
+declare(strict_types=1);
 
-    foreach ($p as $v) {
-        if ($v % 2 != 0) {
-            $oc++;
+namespace PalindromeRearranging;
+
+class Solution
+{
+    public static function solution($inputString)
+    {
+        $oc = 0;
+        $p = array_count_values(str_split($inputString));
+
+        foreach ($p as $v) {
+            if ($v % 2 != 0) {
+                $oc++;
+            }
         }
+        return $oc < 2;
     }
-    return $oc < 2;
 }

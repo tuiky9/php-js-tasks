@@ -1,4 +1,5 @@
-function arrayMaxConsecutiveSum(inputArray, k) {
+class Solution {
+    static solution(inputArray, k) {
     let sum = 0;
     let j = k;
     while (j--) {
@@ -12,4 +13,9 @@ function arrayMaxConsecutiveSum(inputArray, k) {
         }
     }
     return maxsum;
+}
+}
+
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = { Solution };
 }

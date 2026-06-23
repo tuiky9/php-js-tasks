@@ -1,4 +1,5 @@
-function arrayMaximalAdjacentDifference(inputArray) {
+class Solution {
+    static solution(inputArray) {
     let maxd = 0;
     for(var i = 1; i < inputArray.length; i++){
         let dif = Math.abs(inputArray[i]-inputArray[i-1]);
@@ -7,4 +8,9 @@ function arrayMaximalAdjacentDifference(inputArray) {
         }
     }
 return maxd;
+}
+}
+
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = { Solution };
 }

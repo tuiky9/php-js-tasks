@@ -1,8 +1,15 @@
 <?php
 
-function findEmailDomain($address)
-{
-    $parts = explode('@', $address);
+declare(strict_types=1);
 
-    return array_pop($parts);
+namespace FindEmailDomain;
+
+class Solution
+{
+    public static function solution($address)
+    {
+        $parts = explode('@', $address);
+
+        return array_pop($parts);
+    }
 }

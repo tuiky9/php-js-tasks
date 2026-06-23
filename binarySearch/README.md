@@ -2,60 +2,67 @@
 
 ## Task
 
-Given a **sorted** array of integers in **non-decreasing** order and a **target** value, return the **zero-based index** of the target if it is present; otherwise return `-1`.
+You receive an integer array sorted in **ascending** (non-decreasing) order and a **target** integer. Locate the target using **binary search** and return its **zero-based index**, or `-1` if it is absent.
 
-Use **binary search** (do not scan the whole array linearly).
+Do not solve this by scanning every element linearly.
 
 ## Rules
 
-- The input array is sorted ascending (`$sorted[$i] <= $sorted[$i + 1]`).
-- Return the **leftmost** index when the target appears more than once.
-- If the target is not in the array, return `-1`.
-- An empty array always returns `-1`.
+- `$sorted` is ordered so `$sorted[$i] <= $sorted[$i + 1]` for all valid `$i`.
+- When the target appears multiple times, return the **leftmost** (smallest) index.
+- Missing targets yield `-1`.
+- An empty array always yields `-1`.
 
 ## Input
 
-- `$sorted` — sorted array of integers (may be empty).
-- `$target` — integer to find.
+- `$sorted` — ascending sorted array of integers (possibly empty).
+- `$target` — integer to locate.
 
 ## Output
 
-- Integer index `0 .. count($sorted) - 1`, or `-1`.
+- Index in the range `0 .. count($sorted) - 1`, or `-1`.
 
 ## Examples
 
 | Array | Target | Output |
 |-------|--------|--------|
-| `[1, 3, 5, 7, 9]` | `5` | `2` |
-| `[1, 3, 5, 7, 9]` | `4` | `-1` |
-| `[2, 4, 4, 4, 8]` | `4` | `1` |
-| `[]` | `10` | `-1` |
+| `[-10, -5, 0, 3, 7]` | `-5` | `1` |
+| `[42]` | `42` | `0` |
+| `[42]` | `7` | `-1` |
+| `[1, 100, 200, 300, 400, 500]` | `300` | `3` |
+| `[5, 5, 5, 5]` | `5` | `0` |
 
 ```text
-Input:  sorted = [1, 3, 5, 7, 9], target = 5
-Output: 2
+Input:  sorted = [-10, -5, 0, 3, 7], target = -5
+Output: 1
 ```
 
 ```text
-Input:  sorted = [1, 3, 5, 7, 9], target = 1
-Output: 0
-```
-
-```text
-Input:  sorted = [1, 3, 5, 7, 9], target = 10
+Input:  sorted = [1, 100, 200, 300, 400, 500], target = 250
 Output: -1
+```
+
+```text
+Input:  sorted = [10, 20], target = 20
+Output: 1
 ```
 
 ## Function signature
 
 ```php
-function binarySearch(array $sorted, int $target): int
+class Solution {
+    public static function solution(...)
+}
 ```
 
 Implement this function in `php/binary_search.php`.
 
+Call the solution with `Solution::solution(...)`.
+
 ```javascript
-function binarySearch(sorted, target)
+class Solution {
+    static solution(...)
+}
 ```
 
 Implement this function in `js/binary_search.js`.
@@ -71,7 +78,7 @@ composer install
 From this task directory (`binarySearch`), run PHPUnit:
 
 ```bash
-../vendor/bin/phpunit -c ../phpunit.xml ./BinarySearchTest.php
+../vendor/bin/phpunit -c ../phpunit.xml php/BinarySearchTest.php
 ```
 
-<p><strong>Run test:</strong> <code>../vendor/bin/phpunit -c ../phpunit.xml ./BinarySearchTest.php</code></p>
+<p><strong>Run test:</strong> <code>../vendor/bin/phpunit -c ../phpunit.xml php/BinarySearchTest.php</code></p>

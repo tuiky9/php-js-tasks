@@ -1,7 +1,14 @@
 <?php
 
-function validTime($time)
+declare(strict_types=1);
+
+namespace ValidTime;
+
+class Solution
 {
-    $timeArray = explode(':', $time);
-    return $timeArray[0] < 24 && $timeArray[1] < 60;
+    public static function solution($time)
+    {
+        $timeArray = explode(':', $time);
+        return $timeArray[0] < 24 && $timeArray[1] < 60;
+    }
 }

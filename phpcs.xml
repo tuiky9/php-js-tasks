@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<ruleset name="PHP_TASKS">
+    <description>PSR-12 coding standard for PHP tasks.</description>
+
+    <file>.</file>
+    <exclude-pattern>vendor/*</exclude-pattern>
+    <exclude-pattern>.cache/*</exclude-pattern>
+    <exclude-pattern>scripts/*</exclude-pattern>
+
+    <rule ref="PSR12"/>
+
+    <!-- PHPUnit test classes use the global namespace by convention. -->
+    <rule ref="PSR1.Classes.ClassDeclaration.MissingNamespace">
+        <exclude-pattern>*Test.php</exclude-pattern>
+    </rule>
+</ruleset>

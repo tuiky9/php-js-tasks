@@ -1,8 +1,10 @@
 <h2>Alphabetic Shift</h2>
-<p>source: <a href="https://www.codesignal.com/">codesignal.com</a>
-<div><p>Given a string, your task is to replace each of its characters by the next one in the English alphabet; i.e. replace <code>a</code> with <code>b</code>, replace <code>b</code> with <code>c</code>, etc (<code>z</code> would be replaced by <code>a</code>).</p>
+<div><p>Transform a string by shifting every lowercase letter one step forward in the alphabet: <code>a</code> becomes <code>b</code>, <code>b</code> becomes <code>c</code>, and so on. After <code>z</code>, wrap around to <code>a</code>.</p>
 <p><span style="color:#44BFA3;font-size:1.4em">Example</span></p>
-<p>For <code>inputString = "crazy"</code>, the output should be <code>alphabeticShift(inputString) = "dsbaz"</code>.</p>
+<p>For <code>inputString = "z"</code>, the output should be <code>alphabeticShift(inputString) = "a"</code>.</p>
+<p>For <code>inputString = "abc"</code>, the output should be <code>alphabeticShift(inputString) = "bcd"</code>.</p>
+<p>For <code>inputString = "zzzz"</code>, the output should be <code>alphabeticShift(inputString) = "aaaa"</code>.</p>
+<p>For <code>inputString = "code"</code>, the output should be <code>alphabeticShift(inputString) = "dpef"</code>.</p>
 <p><span style="color:#44BFA3;font-size:1.4em">Input/Output</span></p>
 <ul>
 <li>
@@ -22,4 +24,4 @@
 </li>
 </ul>
 </div>
-<p><strong>Run test:</strong> <code>../vendor/bin/phpunit -c ../phpunit.xml ./AlphabeticShiftTest.php</code></p>
+<p><strong>Run test:</strong> <code>../vendor/bin/phpunit -c ../phpunit.xml php/AlphabeticShiftTest.php</code></p>

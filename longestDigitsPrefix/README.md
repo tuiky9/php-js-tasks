@@ -1,9 +1,16 @@
 <h2>Longest Digits Prefix</h2>
-<p>source: <a href="https://www.codesignal.com/">codesignal.com</a>
-<div class="markdown"><p>Given a string, output its longest <a href="keyword://string-prefix" target="_blank">prefix</a> which contains only digits.</p>
+<div class="markdown"><p>Given a string, return the longest <a href="keyword://string-prefix" target="_blank">prefix</a> that consists entirely of digit characters.</p>
 <p><span style="color:#44BFA3;font-size:1.4em">Example</span></p>
-<p>For <code>inputString = "123aa1"</code>, the output should be<br>
-<code>longestDigitsPrefix(inputString) = "123"</code>.</p>
+<ul>
+<li>For <code>inputString = "0123456789"</code>, the output should be<br>
+<code>longestDigitsPrefix(inputString) = "0123456789"</code>.</li>
+<li>For <code>inputString = "abc"</code>, the output should be<br>
+<code>longestDigitsPrefix(inputString) = ""</code>.</li>
+<li>For <code>inputString = "001a"</code>, the output should be<br>
+<code>longestDigitsPrefix(inputString) = "001"</code>.</li>
+<li>For <code>inputString = "1"</code>, the output should be<br>
+<code>longestDigitsPrefix(inputString) = "1"</code>.</li>
+</ul>
 <p><span style="color:#44BFA3;font-size:1.4em">Input/Output</span></p>
 <ul>
 <li>
@@ -19,4 +26,4 @@
 </li>
 </ul>
 </div>
-<p><strong>Run test:</strong> <code>../vendor/bin/phpunit -c ../phpunit.xml ./LongestDigitsPrefixTest.php</code></p>
+<p><strong>Run test:</strong> <code>../vendor/bin/phpunit -c ../phpunit.xml php/LongestDigitsPrefixTest.php</code></p>

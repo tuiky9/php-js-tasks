@@ -1,4 +1,5 @@
-function formatBytes(bytes) {
+class Solution {
+    static solution(bytes) {
     if (bytes < 1024) {
         return bytes + ' B';
     }
@@ -15,4 +16,9 @@ function formatBytes(bytes) {
     }
 
     return value.toFixed(1) + ' GB';
+}
+}
+
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = { Solution };
 }

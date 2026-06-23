@@ -2,58 +2,62 @@
 
 ## Task
 
-Parse a URL **query string** into an associative array of string keys and string values.
+Convert a URL **query string** into an associative array mapping string keys to string values.
 
-Implement the parsing **manually** (do **not** use `parse_str()`).
+Build the parser **by hand** — do **not** call `parse_str()`.
+
+Invoke your implementation via `Solution::solution(...)`.
 
 ## Rules
 
-- The input may optionally start with `?`; strip it before parsing.
-- Pairs are separated by `&`.
-- Each pair is `key=value`. If `=` is missing, the value is an empty string `""`.
-- Split each pair on the **first** `=` only (values may contain `=`).
-- Apply `urldecode()` to both keys and values.
-- If the same key appears more than once, the **last** occurrence wins.
-- Ignore empty segments produced by trailing `&` (e.g. `a=1&` → one pair).
-- An empty string (or only `?`) returns an empty array `[]`.
+- If the string begins with `?`, remove that character before processing.
+- Separate key-value pairs with `&`.
+- Each pair has the form `key=value`. When no `=` is present, treat the value as `""`.
+- Divide each pair at the **first** `=` only (values may include additional `=` signs).
+- Run `urldecode()` on every key and value.
+- When a key is repeated, keep only the **last** value assigned to it.
+- Skip empty segments from a trailing `&` (e.g. `a=1&` yields one pair).
+- Return `[]` for an empty string or a string that is only `?`.
 
 ## Input
 
-- `query` — a query string (with or without leading `?`).
+- `query` — a query string, with or without a leading `?`.
 
 ## Output
 
-- An associative array `key => value` (both strings).
+- An associative array of `key => value` pairs (both strings).
 
 ## Examples
 
 | Input | Output |
 |-------|--------|
-| `"foo=1&bar=2"` | `['foo' => '1', 'bar' => '2']` |
-| `"?foo=1&bar=hello%20world"` | `['foo' => '1', 'bar' => 'hello world']` |
-| `"a=1&a=2"` | `['a' => '2']` |
-| `"flag"` | `['flag' => '']` |
-| `""` | `[]` |
+| `"?"` | `[]` |
+| `"q=1%262"` | `['q' => '1&2']` |
+| `"user%20name=Ann"` | `['user name' => 'Ann']` |
+| `"eq=a=b=c"` | `['eq' => 'a=b=c']` |
+| `"msg=hello+world"` | `['msg' => 'hello world']` |
 
 ```text
-Input:  "foo=1&bar=hello%20world"
-Output: ['foo' => '1', 'bar' => 'hello world']
+Input:  "x=1&y=2&"
+Output: ['x' => '1', 'y' => '2']
 ```
 
 ```text
-Input:  "?x=10&y=20"
-Output: ['x' => '10', 'y' => '20']
+Input:  "a=1&&b=2"
+Output: ['a' => '1', 'b' => '2']
 ```
 
 ```text
-Input:  "key=a%3Db"
-Output: ['key' => 'a=b']
+Input:  "empty="
+Output: ['empty' => '']
 ```
 
 ## Function signature
 
 ```php
-function parseQueryString(string $query): array
+class Solution {
+    public static function solution(...)
+}
 ```
 
 Implement this function in `php/parse_query_string.php`.
@@ -69,7 +73,7 @@ composer install
 From this task directory (`parseQueryString`), run PHPUnit:
 
 ```bash
-../vendor/bin/phpunit -c ../phpunit.xml ./ParseQueryStringTest.php
+../vendor/bin/phpunit -c ../phpunit.xml php/ParseQueryStringTest.php
 ```
 
-<p><strong>Run test:</strong> <code>../vendor/bin/phpunit -c ../phpunit.xml ./ParseQueryStringTest.php</code></p>
+<p><strong>Run test:</strong> <code>../vendor/bin/phpunit -c ../phpunit.xml php/ParseQueryStringTest.php</code></p>

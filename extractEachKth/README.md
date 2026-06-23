@@ -1,5 +1,4 @@
 <h2>extract Each Kth</h2>
-<p>source: <a href="https://www.codesignal.com/">codesignal.com</a>
 <div><p>Given array of integers, remove each <code>k<sup>th</sup></code> element from it.</p>
 <p><span style="color:#44BFA3;font-size:1.4em">Example</span></p>
 <p>For <code>inputArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]</code> and <code>k = 3</code>, the output should be<br>

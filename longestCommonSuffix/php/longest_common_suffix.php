@@ -1,27 +1,32 @@
 <?php
 
-class Solution {    
-    
-    public function solution(array $strs): string {       
+declare(strict_types=1);
+
+namespace LongestCommonSuffix;
+
+class Solution
+{
+    public static function solution(array $strs): string
+    {
         if (count($strs) === 0) {
             return "";
         } elseif (count($strs) === 1) {
             return $strs[0];
         }
-        
+
         $minStrLen = strlen($strs[0]);
-        
+
         foreach ($strs as $str) {
             if ($str === "") {
                 return "";
             }
-            
+
             if (strlen($str) <= $minStrLen) {
                 $minStrLen = strlen($str);
                 $minStr = $str;
             }
         }
-        
+
         $result = "";
         for ($i = 1; $i <= $minStrLen; $i++) {
             $char = substr($minStr, -$i, 1);
@@ -33,8 +38,8 @@ class Solution {
             }
             $result .= $char;
         }
-    
-        $result = strrev($result);        
+
+        $result = strrev($result);
 
         return $result;
     }

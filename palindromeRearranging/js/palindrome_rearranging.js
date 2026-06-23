@@ -1,7 +1,5 @@
-//string would be palindrome if unique characters are even in number, an odd length string 
-//however, can accomodate one odd character/s in the middle of string, to make it palindrome.
-
-function palindromeRearranging(inputString) {
+class Solution {
+    static solution(inputString) {
   
   let countedEle = inputString.split('').reduce(function (a, v) {v in a ? a[v]++ : a[v] = 1; return a;}, {});
   let f = inputString.length%2 == 0?1:0;
@@ -11,4 +9,9 @@ function palindromeRearranging(inputString) {
   }
   
   return f < 2;
+}
+}
+
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = { Solution };
 }

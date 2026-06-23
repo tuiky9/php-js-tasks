@@ -1,29 +1,67 @@
-<h2>Even Digits Only</h2>
-<p>source: <a href="https://www.codesignal.com/">codesignal.com</a></p>
-<div class="markdown"><p>Check if all digits of the given integer are even.</p>
-<p><span style="color:#44BFA3;font-size:1.4em">Example</span></p>
-<ul>
-<li>For <code>n = 248622</code>, the output should be<br>
-<code>evenDigitsOnly(n) = true</code>;</li>
-<li>For <code>n = 642386</code>, the output should be<br>
-<code>evenDigitsOnly(n) = false</code>.</li>
-</ul>
-<p><span style="color:#44BFA3;font-size:1.4em">Input/Output</span></p>
-<ul>
-<li>
-<p><strong>[execution time limit] 4 seconds (php)</strong></p>
-</li>
-<li>
-<p><strong>[input] integer n</strong></p>
-<p><em>Guaranteed constraints:</em><br>
-<code>1 ≤ n ≤ 10<sup>9</sup></code>.</p>
-</li>
-<li>
-<p><strong>[output] boolean</strong></p>
-<ul>
-<li><code>true</code> if all digits of <code>n</code> are even, <code>false</code> otherwise.</li>
-</ul>
-</li>
-</ul>
-</div>
-<p><strong>Run test:</strong> <code>../vendor/bin/phpunit -c ../phpunit.xml ./EvenDigitsOnlyTest.php</code></p>
+# Even Digits Only
+
+## Task
+
+Given a non-negative integer, decide whether **every decimal digit** in its representation is even (`0`, `2`, `4`, `6`, or `8`).
+
+Return `true` when all digits are even; otherwise return `false`.
+
+## Input
+
+- `n` — a non-negative integer (`0 ≤ n ≤ 10⁹`; tests include `0`).
+
+## Output
+
+- `true` if every digit of `n` is even.
+- `false` if at least one digit is odd.
+
+## Examples
+
+| n | Output |
+|---|--------|
+| `0` | `true` |
+| `8` | `true` |
+| `13579` | `false` (all digits are odd) |
+
+```text
+Input:  n = 0
+Output: true
+```
+
+```text
+Input:  n = 8
+Output: true
+```
+
+```text
+Input:  n = 13579
+Output: false
+```
+
+## Function signature
+
+```php
+class Solution {
+    public static function solution(...)
+}
+```
+
+Implement in `php/even_digits_only.php`.
+
+Call the solution with `Solution::solution(...)`.
+
+## Run tests
+
+From the repository root, install dependencies once:
+
+```bash
+composer install
+```
+
+From this task directory (`evenDigitsOnly`), run PHPUnit:
+
+```bash
+../vendor/bin/phpunit -c ../phpunit.xml php/EvenDigitsOnlyTest.php
+```
+
+<p><strong>Run test:</strong> <code>../vendor/bin/phpunit -c ../phpunit.xml php/EvenDigitsOnlyTest.php</code></p>

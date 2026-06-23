@@ -1,14 +1,21 @@
 <?php
 
-function evenDigitsOnly($n)
-{
-    $isEven = true;
+declare(strict_types=1);
 
-    foreach (str_split($n) as $d) {
-        if ($d % 2 !== 0) {
-            $isEven = false;
-            break;
+namespace EvenDigitsOnly;
+
+class Solution
+{
+    public static function solution($n)
+    {
+        $isEven = true;
+
+        foreach (str_split((string) $n) as $d) {
+            if ($d % 2 !== 0) {
+                $isEven = false;
+                break;
+            }
         }
+        return $isEven;
     }
-    return $isEven;
 }

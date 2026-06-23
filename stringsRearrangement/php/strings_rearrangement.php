@@ -1,21 +1,28 @@
 <?php
 
-function stringsRearrangement($i)
+declare(strict_types=1);
+
+namespace StringsRearrangement;
+
+class Solution
 {
-    $x = 0;
+    public static function solution($i)
+    {
+        $x = 0;
 
-    foreach ($i as $v) {
-        $o = 0;
-        foreach ($i as $z) {
-            $o += levenshtein($v, $z) == 1;
+        foreach ($i as $v) {
+            $o = 0;
+            foreach ($i as $z) {
+                $o += levenshtein($v, $z) == 1;
+            }
+
+            if (!$o || $o > 4) {
+                return false;
+            }
+
+            $x += $o < 2;
         }
 
-        if (!$o || $o > 4) {
-            return false;
-        }
-
-        $x += $o < 2;
+        return $x < 3;
     }
-
-    return $x < 3;
 }

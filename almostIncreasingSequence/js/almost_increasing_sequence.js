@@ -1,4 +1,5 @@
-function almostIncreasingSequence(sequence) {
+class Solution {
+    static solution(sequence) {
 let c = 0;
     for(let i=1; i<sequence.length; i++){
         if(sequence[i] <= sequence[i-1]){
@@ -9,4 +10,9 @@ let c = 0;
         }
 }
     return c<2;
+}
+}
+
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = { Solution };
 }

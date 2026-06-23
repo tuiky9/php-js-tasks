@@ -2,22 +2,22 @@
 
 ## Task
 
-Merge two **nested arrays** into a new array. The right-hand array wins on conflicts, with special rules for nested maps vs lists.
+Combine two **nested arrays** into a brand-new array. When keys collide, values from the right-hand side take precedence, with special handling for nested maps versus lists.
 
 ## Rules
 
-- Return a **new** array. Do **not** mutate `$left` or `$right`.
+- Return a **new** array. Do **not** modify `$left` or `$right`.
 - For each key in `$right`:
-  - If the key exists in the result, and **both** values are arrays that are **not** lists (`array_is_list` is `false` for both), merge those two values **recursively** with the same rules.
-  - Otherwise the value from `$right` replaces the value in the result (scalars, lists, or when only one side is a non-list array).
-- Keys present only in `$left` are kept unchanged in the result.
-- Keys present only in `$right` are added to the result.
-- A **list** is an array with consecutive integer keys starting at `0` (PHP `array_is_list`).
+  - If that key already exists in the result and **both** stored values are arrays that are **not** lists (`array_is_list` is `false` for each), merge those inner arrays **recursively** using the same rules.
+  - Otherwise the right-hand value replaces the result entry (scalars, lists, or when only one side is a non-list array).
+- Keys that appear only in `$left` are copied into the result unchanged.
+- Keys that appear only in `$right` are added to the result.
+- A **list** is an array whose keys are consecutive integers starting at `0` (PHP `array_is_list`).
 
 ## Input
 
-- `$left` — an array (may be nested).
-- `$right` — an array (may be nested).
+- `$left` — an array (possibly nested).
+- `$right` — an array (possibly nested).
 
 ## Output
 
@@ -27,35 +27,45 @@ Merge two **nested arrays** into a new array. The right-hand array wins on confl
 
 | Left | Right | Output |
 |------|-------|--------|
-| `['a' => 1]` | `['b' => 2]` | `['a' => 1, 'b' => 2]` |
-| `['a' => 1]` | `['a' => 2]` | `['a' => 2]` |
-| `['x' => ['a' => 1]]` | `['x' => ['b' => 2]]` | `['x' => ['a' => 1, 'b' => 2]]` |
-| `['items' => [1, 2]]` | `['items' => [3]]` | `['items' => [3]]` |
+| `[]` | `['a' => 1]` | `['a' => 1]` |
+| `['a' => ['b' => ['c' => 1, 'd' => 2]]]` | `['a' => ['b' => ['d' => 3, 'e' => 4]]]` | `['a' => ['b' => ['c' => 1, 'd' => 3, 'e' => 4]]]` |
+| `['mix' => [1, 2]]` | `['mix' => ['k' => 'v']]` | `['mix' => ['k' => 'v']]` |
+| `['keep' => 1, 'shared' => ['x' => 1]]` | `['shared' => ['y' => 2]]` | `['keep' => 1, 'shared' => ['x' => 1, 'y' => 2]]` |
 
 ```text
-Left:   ['config' => ['debug' => true, 'ttl' => 60]]
-Right:  ['config' => ['ttl' => 120, 'env' => 'prod']]
-Output: ['config' => ['debug' => true, 'ttl' => 120, 'env' => 'prod']]
+Left:   ['a' => 1]
+Right:  ['b' => ['x' => 10]]
+Output: ['a' => 1, 'b' => ['x' => 10]]
 ```
 
 ```text
-Left:   ['tags' => ['php', 'test']]
-Right:  ['tags' => ['merge']]
-Output: ['tags' => ['merge']]
+Left:   [0 => 'a', 1 => 'b']
+Right:  [0 => 'c']
+Output: [0 => 'c', 1 => 'b']
 ```
 
-(List values are replaced, not concatenated.)
+```text
+Left:   ['a' => 1]
+Right:  ['a' => null]
+Output: ['a' => null]
+```
 
 ## Function signature
 
 ```php
-function deepMerge(array $left, array $right): array
+class Solution {
+    public static function solution(...)
+}
 ```
 
 Implement this function in `php/deep_merge.php`.
 
+Call the solution with `Solution::solution(...)`.
+
 ```javascript
-function deepMerge(left, right)
+class Solution {
+    static solution(...)
+}
 ```
 
 Implement this function in `js/deep_merge.js`. Use plain objects `{}` for maps and arrays `[]` for lists.
@@ -71,7 +81,7 @@ composer install
 From this task directory (`deepMerge`), run PHPUnit:
 
 ```bash
-../vendor/bin/phpunit -c ../phpunit.xml ./DeepMergeTest.php
+../vendor/bin/phpunit -c ../phpunit.xml php/DeepMergeTest.php
 ```
 
-<p><strong>Run test:</strong> <code>../vendor/bin/phpunit -c ../phpunit.xml ./DeepMergeTest.php</code></p>
+<p><strong>Run test:</strong> <code>../vendor/bin/phpunit -c ../phpunit.xml php/DeepMergeTest.php</code></p>

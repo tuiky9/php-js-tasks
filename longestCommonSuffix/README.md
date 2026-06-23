@@ -2,18 +2,18 @@
 
 ## Task
 
-Given an array of strings, find the **longest common suffix** shared by **all** strings in the array.
+You are given an array of strings. Return the **longest common suffix** that appears at the end of **every** string in the array.
 
-A **suffix** is a contiguous sequence of characters at the **end** of a string. For example, `"ing"` is a suffix of `"flying"`.
+A **suffix** is a contiguous substring at the **end** of a string — for instance, `"ing"` is a suffix of `"flying"`.
 
 ## Rules
 
-- Compare suffixes from the end of each string, character by character.
-- Return the longest substring that appears at the end of every string in the array.
+- Walk backward through the strings, comparing characters from the end.
+- Return the longest substring shared as a suffix by all strings.
 - If the array is **empty**, return `""`.
-- If any string is **empty**, return `""` (no non-empty suffix can be common to all).
-- If there is **one** string in the array, return that entire string.
-- If there is **no** common suffix, return `""`.
+- If any string is **empty**, return `""` (no non-empty suffix can be shared by all).
+- If the array has **one** string, return that entire string.
+- If no suffix is shared, return `""`.
 
 ## Input
 
@@ -21,49 +21,56 @@ A **suffix** is a contiguous sequence of characters at the **end** of a string. 
 
 ## Output
 
-- A string: the longest common suffix, or `""` when none exists.
+- A string: the longest common suffix, or `""` if none exists.
 
 ## Examples
 
 | Input | Output |
 |-------|--------|
-| `["barking", "parking", "starking"]` | `"arking"` |
-| `["flower", "tower", "power"]` | `"ower"` |
-| `["ab", "abc", "abcd"]` | `""` |
-| `[]` | `""` |
-| `["word"]` | `"word"` |
+| `["racer", "placer", "effacer"]` | `"acer"` |
+| `["introduction", "reduction", "production", "seduction"]` | `"duction"` |
+| `["a", "aa", "aaa"]` | `"a"` |
+| `["communication", "station", "vacation", "nation"]` | `"ation"` |
 
 ```text
-Input:  ["hello", "jello"]
-Output: "ello"
+Input:  ["spoon", "moon", "balloon", "cartoon", "raccoon"]
+Output: "oon"
 ```
 
 ```text
-Input:  ["alpha", "beta", "gamma"]
-Output: "a"
+Input:  ["transformation", "information", "formation", "automation"]
+Output: "mation"
 ```
 
 ```text
-Input:  ["apple", "grapple", "pineapple"]
-Output: "apple"
+Input:  ["ab", "abc", "abcd"]
+Output: ""
 ```
 
 ## Function signature
 
 ```php
 class Solution {
-    public function solution(array $strs): string
+    public static function solution(...)
 }
 ```
 
 Implement in `php/longest_common_suffix.php`.
 
+Call the solution with `Solution::solution(...)`.
+
 ## Run tests
+
+From the repository root, install dependencies once:
+
+```bash
+composer install
+```
 
 From this task directory (`longestCommonSuffix`), run PHPUnit:
 
 ```bash
-../vendor/bin/phpunit -c ../phpunit.xml ./LongestCommonSuffixTest.php
+../vendor/bin/phpunit -c ../phpunit.xml php/LongestCommonSuffixTest.php
 ```
 
-<p><strong>Run test:</strong> <code>../vendor/bin/phpunit -c ../phpunit.xml ./LongestCommonSuffixTest.php</code></p>
+<p><strong>Run test:</strong> <code>../vendor/bin/phpunit -c ../phpunit.xml php/LongestCommonSuffixTest.php</code></p>

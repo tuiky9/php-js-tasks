@@ -1,4 +1,5 @@
-function fileNaming(names) {
+class Solution {
+    static solution(names) {
     let c = 1;
     let ni = '';
     for (var i = 0; i <= names.length; i++) {
@@ -11,4 +12,9 @@ function fileNaming(names) {
         c = 1;
     }
     return names;
+}
+}
+
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = { Solution };
 }

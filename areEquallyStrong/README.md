@@ -1,15 +1,16 @@
 <h2>Are Equally Strong</h2>
-<p>source: <a href="https://www.codesignal.com/">codesignal.com</a>
-<div class="markdown"><p>Call two arms <em>equally strong</em> if the heaviest weights they each are able to lift are equal.</p>
-<p>Call two people <em>equally strong</em> if their strongest arms are equally strong (the strongest arm can be both the right and the left), and so are their weakest arms.</p>
-<p>Given your and your friend's arms' lifting capabilities find out if you two are equally strong.</p>
+<div class="markdown"><p>Two arms are <em>equally strong</em> when the maximum weight each can lift is the same.</p>
+<p>Two people are <em>equally strong</em> when their stronger arms match and their weaker arms also match (either arm may be the stronger one).</p>
+<p>Given the lifting limits for your left and right arms and your friend's left and right arms, determine whether you and your friend are equally strong.</p>
 <p><span style="color:#44BFA3;font-size:1.4em">Example</span></p>
 <ul>
-<li>For <code>yourLeft = 10</code>, <code>yourRight = 15</code>, <code>friendsLeft = 15</code>, and <code>friendsRight = 10</code>, the output should be<br>
+<li>For <code>yourLeft = 1</code>, <code>yourRight = 1</code>, <code>friendsLeft = 1</code>, and <code>friendsRight = 1</code>, the output should be<br>
 <code>areEquallyStrong(yourLeft, yourRight, friendsLeft, friendsRight) = true</code>;</li>
-<li>For <code>yourLeft = 15</code>, <code>yourRight = 10</code>, <code>friendsLeft = 15</code>, and <code>friendsRight = 10</code>, the output should be<br>
+<li>For <code>yourLeft = 5</code>, <code>yourRight = 7</code>, <code>friendsLeft = 7</code>, and <code>friendsRight = 5</code>, the output should be<br>
 <code>areEquallyStrong(yourLeft, yourRight, friendsLeft, friendsRight) = true</code>;</li>
 <li>For <code>yourLeft = 15</code>, <code>yourRight = 10</code>, <code>friendsLeft = 15</code>, and <code>friendsRight = 9</code>, the output should be<br>
+<code>areEquallyStrong(yourLeft, yourRight, friendsLeft, friendsRight) = false</code>;</li>
+<li>For <code>yourLeft = 8</code>, <code>yourRight = 9</code>, <code>friendsLeft = 7</code>, and <code>friendsRight = 10</code>, the output should be<br>
 <code>areEquallyStrong(yourLeft, yourRight, friendsLeft, friendsRight) = false</code>.</li>
 </ul>
 <p><span style="color:#44BFA3;font-size:1.4em">Input/Output</span></p>
@@ -49,4 +50,4 @@
 </li>
 </ul>
 </div>
-<p><strong>Run test:</strong> <code>../vendor/bin/phpunit -c ../phpunit.xml ./AreEquallyStrongTest.php</code></p>
+<p><strong>Run test:</strong> <code>../vendor/bin/phpunit -c ../phpunit.xml php/AreEquallyStrongTest.php</code></p>

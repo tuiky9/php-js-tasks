@@ -1,5 +1,4 @@
 <h2>Spiral Numbers</h2>
-<p>source: <a href="https://www.codesignal.com/">codesignal.com</a>
 <div><p>Construct a square matrix with a size <code>N × N</code> containing integers from <code>1</code> to <code>N * N</code> in a spiral order, starting from top-left and in clockwise direction.</p>
 <p><span style="color:#44BFA3;font-size:1.4em">Example</span></p>
 <p>For <code>n = 3</code>, the output should be</p>

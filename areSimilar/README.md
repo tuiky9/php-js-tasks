@@ -1,24 +1,23 @@
 <h2>Are Similar</h2>
-source: <a href="https://www.codesignal.com/">www.codesignal.com</a>
 <hr />
-<div><p>Two arrays are called <em>similar</em> if one can be obtained from another by swapping at most one pair of elements in one of the arrays.</p>
-<p>Given two arrays <code>a</code> and <code>b</code>, check whether they are <em>similar</em>.</p>
+<div><p>Two arrays are <em>similar</em> if one can be turned into the other by swapping at most one pair of elements in either array.</p>
+<p>Given two integer arrays <code>a</code> and <code>b</code> of the same length, return whether they are similar.</p>
 <p><span style="color:#44BFA3;font-size:1.4em">Example</span></p>
 <ul>
 <li>
-<p>For <code>a = [1, 2, 3]</code> and <code>b = [1, 2, 3]</code>, the output should be<br>
-<code>areSimilar(a, b) = true</code>.</p>
-<p>The arrays are equal, no need to swap any elements.</p>
+<p>For <code>a = [1, 2, 3]</code> and <code>b = [1, 2, 4]</code>, the output should be<br>
+<code>areSimilar(a, b) = false</code>.</p>
+<p>Even a single swap cannot make the arrays equal.</p>
 </li>
 <li>
-<p>For <code>a = [1, 2, 3]</code> and <code>b = [2, 1, 3]</code>, the output should be<br>
+<p>For <code>a = [3, 1, 2]</code> and <code>b = [1, 3, 2]</code>, the output should be<br>
 <code>areSimilar(a, b) = true</code>.</p>
-<p>We can obtain <code>b</code> from <code>a</code> by swapping <code>2</code> and <code>1</code> in <code>b</code>.</p>
+<p>Swapping <code>3</code> and <code>1</code> in <code>a</code> produces <code>b</code>.</p>
 </li>
 <li>
 <p>For <code>a = [1, 2, 2]</code> and <code>b = [2, 1, 1]</code>, the output should be<br>
 <code>areSimilar(a, b) = false</code>.</p>
-<p>Any swap of any two elements either in <code>a</code> or in <code>b</code> won't make <code>a</code> and <code>b</code> equal.</p>
+<p>No single swap in either array makes them match.</p>
 </li>
 </ul>
 <p><span style="color:#44BFA3;font-size:1.4em">Input/Output</span></p>
@@ -49,4 +48,4 @@ source: <a href="https://www.codesignal.com/">www.codesignal.com</a>
 </ul>
 
 </div>
-<p><strong>Run test:</strong> <code>../vendor/bin/phpunit -c ../phpunit.xml ./AreSimilarTest.php</code></p>
+<p><strong>Run test:</strong> <code>../vendor/bin/phpunit -c ../phpunit.xml php/AreSimilarTest.php</code></p>

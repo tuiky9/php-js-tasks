@@ -1,31 +1,69 @@
-<h2>Is lucky</h2>
-<p>source: <a href="https://www.codesignal.com/">codesignal.com</a>
-<div><p>Ticket numbers usually consist of an even number of digits. A ticket number is considered <em>lucky</em> if the sum of the first half of the digits is equal to the sum of the second half.</p>
-<p>Given a ticket number <code>n</code>, determine if it's <em>lucky</em> or not.</p>
-<p><span style="color:#44BFA3;font-size:1.4em">Example</span></p>
-<ul>
-<li>For <code>n = 1230</code>, the output should be<br>
-<code>isLucky(n) = true</code>;</li>
-<li>For <code>n = 239017</code>, the output should be<br>
-<code>isLucky(n) = false</code>.</li>
-</ul>
-<p><span style="color:#44BFA3;font-size:1.4em">Input/Output</span></p>
-<ul>
-<li>
-<p><strong>[execution time limit] 4 seconds (js)</strong></p>
-</li>
-<li>
-<p><strong>[input] integer n</strong></p>
-<p>A ticket number represented as a positive integer with an even number of digits.</p>
-<p><em>Guaranteed constraints:</em><br>
-<code>10 ≤ n &lt; 10<sup>6</sup></code>.</p>
-</li>
-<li>
-<p><strong>[output] boolean</strong></p>
-<ul>
-<li><code>true</code> if <code>n</code> is a lucky ticket number, <code>false</code> otherwise.</li>
-</ul>
-</li>
-</ul>
-</div>
-<p><strong>Run test:</strong> <code>../vendor/bin/phpunit -c ../phpunit.xml ./IsLuckyTest.php</code></p>
+# Is Lucky
+
+## Task
+
+A ticket number has an **even** number of digits. It is **lucky** when the sum of the digits in the first half equals the sum of the digits in the second half.
+
+Given a ticket number `n`, return whether it is lucky.
+
+## Input
+
+- `n` — a positive integer with an even number of digits (`10 ≤ n < 10⁶`).
+
+## Output
+
+- `true` if `n` is a lucky ticket number.
+- `false` otherwise.
+
+## Examples
+
+| n | Output |
+|---|--------|
+| `11` | `true` (1 = 1) |
+| `1001` | `true` (1 + 0 = 0 + 1) |
+| `134008` | `true` (1 + 3 + 4 = 0 + 0 + 8) |
+
+```text
+Input:  n = 11
+Output: true
+```
+
+```text
+Input:  n = 1001
+Output: true
+```
+
+```text
+Input:  n = 134008
+Output: true
+```
+
+(First half `134` sums to 8; second half `008` sums to 8.)
+
+## Function signature
+
+```php
+class Solution {
+    public static function solution(...)
+}
+```
+
+Implement in `php/is_lucky.php`.
+
+Call the solution with `Solution::solution(...)`.
+
+## Run tests
+
+From the repository root, install dependencies once:
+
+```bash
+composer install
+```
+
+From this task directory (`isLucky`), run PHPUnit:
+
+```bash
+../vendor/bin/phpunit -c ../phpunit.xml php/IsLuckyTest.php
+```
+
+<p><strong>Run test:</strong> <code>../vendor/bin/phpunit -c ../phpunit.xml php/IsLuckyTest.php</code></p>

@@ -1,9 +1,14 @@
 <h2>Array Change</h2>
-<p>source: <a href="https://www.codesignal.com/">codesignal.com</a>
-<div><p>You are given an array of integers. On each move you are allowed to increase exactly one of its element by one. Find the minimal number of moves required to obtain a strictly increasing sequence from the input.</p>
+<div><p>You receive an array of integers. In one move you may increase any single element by <code>1</code>. Find the fewest moves needed to turn the array into a strictly increasing sequence.</p>
 <p><span style="color:#44BFA3;font-size:1.4em">Example</span></p>
-<p>For <code>inputArray = [1, 1, 1]</code>, the output should be<br>
-<code>arrayChange(inputArray) = 3</code>.</p>
+<p>For <code>inputArray = [-1000, 0, -2, 0]</code>, the output should be<br>
+<code>arrayChange(inputArray) = 5</code>.</p>
+<p>For <code>inputArray = [1, 2, 3]</code>, the output should be<br>
+<code>arrayChange(inputArray) = 0</code>.</p>
+<p>For <code>inputArray = [3, 2, 1]</code>, the output should be<br>
+<code>arrayChange(inputArray) = 6</code>.</p>
+<p>For <code>inputArray = [2, 2, 2, 2]</code>, the output should be<br>
+<code>arrayChange(inputArray) = 6</code>.</p>
 <p><span style="color:#44BFA3;font-size:1.4em">Input/Output</span></p>
 <ul>
 <li>
@@ -24,4 +29,4 @@ It's guaranteed that for the given test cases the answer always fits signed <cod
 </li>
 </ul>
 </div>
-<p><strong>Run test:</strong> <code>../vendor/bin/phpunit -c ../phpunit.xml ./ArrayChangeTest.php</code></p>
+<p><strong>Run test:</strong> <code>../vendor/bin/phpunit -c ../phpunit.xml php/ArrayChangeTest.php</code></p>

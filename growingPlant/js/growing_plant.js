@@ -1,4 +1,5 @@
-function growingPlant(upSpeed, downSpeed, desiredHeight) {
+class Solution {
+    static solution(upSpeed, downSpeed, desiredHeight) {
 
     let days = Math.round(desiredHeight / (upSpeed - downSpeed));
     let a = 0;
@@ -9,4 +10,9 @@ function growingPlant(upSpeed, downSpeed, desiredHeight) {
         }
 
     }
+}
+}
+
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = { Solution };
 }

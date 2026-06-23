@@ -1,7 +1,13 @@
 <?php
 
-class Solution {
-    public static function solution($grid) {
+declare(strict_types=1);
+
+namespace SecondaryDiagonalMinMax;
+
+class Solution
+{
+    public static function solution($grid)
+    {
         $n = count($grid);
 
         if ($n === 0) {

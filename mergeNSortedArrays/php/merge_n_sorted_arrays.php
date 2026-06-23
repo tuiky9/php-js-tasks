@@ -1,7 +1,13 @@
 <?php
 
-class Solution {
-    public static function mergeNSortedArrays($arrays) {
+declare(strict_types=1);
+
+namespace MergeNSortedArrays;
+
+class Solution
+{
+    public static function solution($arrays)
+    {
         $result = [];
         $indexes = [];
 

@@ -1,17 +1,15 @@
 <h2>Array Max Consective Sum</h2>
-<p>source: <a href="https://www.codesignal.com/">codesignal.com</a>
-<div><p>Given array of integers, find the maximal possible sum of some of its <code>k</code> consecutive elements.</p>
+<div><p>Given an array of integers and a positive integer <code>k</code>, find the largest possible sum of any block of <code>k</code> consecutive elements.</p>
 <p><span style="color:#44BFA3;font-size:1.4em">Example</span></p>
-<p>For <code>inputArray = [2, 3, 5, 1, 6]</code> and <code>k = 2</code>, the output should be<br>
-<code>arrayMaxConsecutiveSum(inputArray, k) = 8</code>.<br>
-All possible sums of <code>2</code> consecutive elements are:</p>
-<ul>
-<li><code>2 + 3 = 5</code>;</li>
-<li><code>3 + 5 = 8</code>;</li>
-<li><code>5 + 1 = 6</code>;</li>
-<li><code>1 + 6 = 7</code>.<br>
-Thus, the answer is <code>8</code>.</li>
-</ul>
+<p>For <code>inputArray = [1, 3, 2, 4]</code> and <code>k = 3</code>, the output should be<br>
+<code>arrayMaxConsecutiveSum(inputArray, k) = 9</code>.<br>
+The consecutive triples sum to <code>6</code>, <code>9</code>, and <code>6</code>; the maximum is <code>9</code>.</p>
+<p>For <code>inputArray = [-1, -2, -3, -4]</code> and <code>k = 2</code>, the output should be<br>
+<code>arrayMaxConsecutiveSum(inputArray, k) = -3</code>.</p>
+<p>For <code>inputArray = [5, 5, 5, 5]</code> and <code>k = 1</code>, the output should be<br>
+<code>arrayMaxConsecutiveSum(inputArray, k) = 5</code>.</p>
+<p>For <code>inputArray = [10, -2, 3, 1, 2]</code> and <code>k = 4</code>, the output should be<br>
+<code>arrayMaxConsecutiveSum(inputArray, k) = 12</code>.</p>
 <p><span style="color:#44BFA3;font-size:1.4em">Input/Output</span></p>
 <ul>
 <li>
@@ -38,4 +36,4 @@ Thus, the answer is <code>8</code>.</li>
 </li>
 </ul>
 </div>
-<p><strong>Run test:</strong> <code>../vendor/bin/phpunit -c ../phpunit.xml ./ArrayMaxConsecutiveSumTest.php</code></p>
+<p><strong>Run test:</strong> <code>../vendor/bin/phpunit -c ../phpunit.xml php/ArrayMaxConsecutiveSumTest.php</code></p>

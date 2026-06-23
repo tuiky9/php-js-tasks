@@ -4,16 +4,16 @@
 
 Given an array of `n` integers and a positive integer `k`, reverse the array **in consecutive groups of size `k`**.
 
-Process the array from left to right in blocks of `k` elements. Reverse each full block in place. If the final block has **fewer than `k` elements**, reverse that remaining block as well.
+Walk the array from left to right in chunks of `k` elements. Reverse each complete chunk. When the final chunk has **fewer than `k` elements**, reverse that partial chunk too.
 
-Return the resulting array.
+Return the modified array.
 
 ## Rules
 
-- Split the array into consecutive groups of size `k`.
-- Reverse every group, including the last one even when it has fewer than `k` elements.
-- Preserve element values; only their order changes.
-- `k` is guaranteed to be at least `1`.
+- Partition the array into consecutive groups of size `k`.
+- Reverse every group, including the trailing partial group when it is shorter than `k`.
+- Element values stay the same; only positions change.
+- `k` is always at least `1`.
 
 ## Input
 
@@ -22,52 +22,56 @@ Return the resulting array.
 
 ## Output
 
-- A new array after group reversals.
+- A new array after reversing each group.
 
 ## Examples
 
-Given `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]` and `k = 3`, return:
+Given `[10, 20, 30, 40, 50, 60, 70]` and `k = 5`, return:
 
-`[3, 2, 1, 6, 5, 4, 9, 8, 7, 10]`
+`[50, 40, 30, 20, 10, 70, 60]`
 
-- `[1, 2, 3]` → `[3, 2, 1]`
-- `[4, 5, 6]` → `[6, 5, 4]`
-- `[7, 8, 9]` → `[9, 8, 7]`
-- `[10]` (only one element left) → `[10]`
+- `[10, 20, 30, 40, 50]` → `[50, 40, 30, 20, 10]`
+- `[60, 70]` (remaining two elements) → `[70, 60]`
 
 ```text
-Input:  numbers = [1, 2, 3, 4, 5, 6, 7], k = 3
-Output: [3, 2, 1, 6, 5, 4, 7]
+Input:  numbers = [-7, -6, -5, -4, -3, -2, -1], k = 4
+Output: [-4, -5, -6, -7, -1, -2, -3]
 ```
 
 ```text
-Input:  numbers = [2, 3], k = 2
-Output: [3, 2]
+Input:  numbers = [10, 20, 30, 40, 50, 60, 70], k = 10
+Output: [70, 60, 50, 40, 30, 20, 10]
 ```
 
 ```text
-Input:  numbers = [1, 2, 3, 4, 5, 6], k = 1
-Output: [1, 2, 3, 4, 5, 6]
+Input:  numbers = [1, 2, 3, 4, 5], k = 3
+Output: [3, 2, 1, 5, 4]
 ```
-
-(`k = 1` reverses each one-element group, so the array stays the same.)
 
 ## Function signature
 
 ```php
 class Solution {
-    public static function solution($numbers, $k): array
+    public static function solution(...)
 }
 ```
 
 Implement in `php/reverse_in_groups.php`.
 
+Call the solution with `Solution::solution(...)`.
+
 ## Run tests
+
+From the repository root, install dependencies once:
+
+```bash
+composer install
+```
 
 From this task directory (`reverseInGroups`), run PHPUnit:
 
 ```bash
-../vendor/bin/phpunit -c ../phpunit.xml ./ReverseInGroupsTest.php
+../vendor/bin/phpunit -c ../phpunit.xml php/ReverseInGroupsTest.php
 ```
 
-<p><strong>Run test:</strong> <code>../vendor/bin/phpunit -c ../phpunit.xml ./ReverseInGroupsTest.php</code></p>
+<p><strong>Run test:</strong> <code>../vendor/bin/phpunit -c ../phpunit.xml php/ReverseInGroupsTest.php</code></p>

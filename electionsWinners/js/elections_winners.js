@@ -1,4 +1,5 @@
-function electionsWinners(votes, k) {
+class Solution {
+    static solution(votes, k) {
     let max = Math.max(...votes);
     if (k === 0) {
         return votes.indexOf(max) === votes.lastIndexOf(max) ? 1 : 0;
@@ -9,4 +10,9 @@ function electionsWinners(votes, k) {
         }
         return a;
     }, 0);
+}
+}
+
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = { Solution };
 }

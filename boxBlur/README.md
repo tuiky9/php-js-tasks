@@ -1,5 +1,4 @@
 <h2>Box Blur</h2>
-<p>source: <a href="https://www.codesignal.com/">codesignal.com</a></p>
 <div><p>Last night you partied a little too hard. Now there's a black and white photo of you that's about to go viral! You can't let this ruin your reputation, so you want to apply the <a href="https://en.wikipedia.org/wiki/Box_blur" target="_blank"><em>box blur</em> algorithm</a> to the photo to hide its content.</p>
 <p>The pixels in the input image are represented as integers. The algorithm distorts the input image in the following way: Every pixel <code>x</code> in the output image has a value equal to the average value of the pixel values from the <code>3 × 3</code> square that has its center at <code>x</code>, including <code>x</code> itself. All the pixels on the border of <code>x</code> are then removed.</p>
 <p>Return the blurred image as an integer, with the fractions rounded down.</p>

@@ -1,6 +1,13 @@
 <?php
 
-function isIPv4Address($inputString)
+declare(strict_types=1);
+
+namespace IsIPv4Address;
+
+class Solution
 {
-    return filter_var($inputString, FILTER_VALIDATE_IP, FILTER_FLAG_IPV4) !== false;
+    public static function solution($inputString)
+    {
+        return filter_var($inputString, FILTER_VALIDATE_IP, FILTER_FLAG_IPV4) !== false;
+    }
 }

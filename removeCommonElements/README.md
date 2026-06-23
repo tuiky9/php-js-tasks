@@ -2,16 +2,16 @@
 
 ## Task
 
-You are given two sorted arrays of integers, `list1` and `list2`.
+You are given two sorted integer arrays, `list1` and `list2`.
 
-Return a **new sorted array** that contains all elements from both lists **except** values that appear in **both** lists. The result must be sorted in ascending order.
+Produce a **new sorted array** containing every value from either list **except** those that appear in **both**. The output must be in ascending order.
 
 ## Rules
 
-- Both input arrays are sorted in non-decreasing order.
-- A value that appears in `list1` and also in `list2` must be **removed entirely** from the result (even if it would appear twice after merging).
-- Use an efficient **two-pointer** approach (merge-style walk).
-- Do not mutate the input arrays.
+- Both inputs are sorted in non-decreasing order.
+- Any value present in `list1` and also in `list2` is **excluded completely** from the result (even if it would appear multiple times after a naive merge).
+- Use an efficient **two-pointer** merge-style scan.
+- Do not modify the input arrays.
 
 ## Input
 
@@ -20,18 +20,19 @@ Return a **new sorted array** that contains all elements from both lists **excep
 
 ## Output
 
-- A sorted array with common elements removed.
+- A sorted array with shared values removed.
 
 ## Examples
 
 | list1 | list2 | Output |
 |-------|-------|--------|
-| `[2, 5, 7, 10]` | `[1, 5, 9]` | `[1, 2, 7, 9, 10]` |
-| `[1, 2, 3]` | `[4, 5, 6]` | `[1, 2, 3, 4, 5, 6]` |
-| `[1, 2, 3]` | `[1, 2, 3]` | `[]` |
-| `[]` | `[-1, 0, 1]` | `[-1, 0, 1]` |
+| `[1, 2, 3]` | `[2, 3, 4]` | `[1, 4]` |
+| `[-3, -2, -1]` | `[1, 2, 3]` | `[-3, -2, -1, 1, 2, 3]` |
+| `[-3, -2, -1, 0]` | `[0, 1, 2, 3]` | `[-3, -2, -1, 1, 2, 3]` |
+| `[-3, -1]` | `[-2, -1]` | `[-3, -2]` |
+| `[10, 20, 30]` | `[5, 15, 20, 25]` | `[5, 10, 15, 25, 30]` |
 
-`5` is dropped because it appears in both input lists.
+`20` is omitted because it occurs in both lists.
 
 ```text
 Input:  list1 = [1, 2, 3, 4, 5, 6, 7], list2 = [2, 4, 6]
@@ -47,18 +48,26 @@ Output: [1, 2, 3, 4, 5, 6, 7, 8, 10, 12]
 
 ```php
 class Solution {
-    public function removeCommonElements(array $list1, array $list2): array
+    public static function solution(...)
 }
 ```
 
 Implement in `php/remove_common_elements.php`.
 
+Call the solution with `Solution::solution(...)`.
+
 ## Run tests
+
+From the repository root, install dependencies once:
+
+```bash
+composer install
+```
 
 From this task directory (`removeCommonElements`), run PHPUnit:
 
 ```bash
-../vendor/bin/phpunit -c ../phpunit.xml ./RemoveCommonElementsTest.php
+../vendor/bin/phpunit -c ../phpunit.xml php/RemoveCommonElementsTest.php
 ```
 
-<p><strong>Run test:</strong> <code>../vendor/bin/phpunit -c ../phpunit.xml ./RemoveCommonElementsTest.php</code></p>
+<p><strong>Run test:</strong> <code>../vendor/bin/phpunit -c ../phpunit.xml php/RemoveCommonElementsTest.php</code></p>

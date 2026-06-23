@@ -2,6 +2,8 @@
 
 declare(strict_types=1);
 
+namespace Tests\Support;
+
 final class FunctionLoader
 {
     public static function load(string $filePath, string $functionName): void

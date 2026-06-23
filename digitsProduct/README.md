@@ -1,5 +1,4 @@
 <h2>Digits Product</h2>
-<p>source: <a href="https://www.codesignal.com/">codesignal.com</a>
 <div><p>Given an integer <code>product</code>, find the <em>smallest</em> <strong>positive</strong> (i.e. greater than <code>0</code>) integer the product of whose digits is equal to <code>product</code>. If there is no such integer, return <code>-1</code> instead.</p>
 <p><strong>Example</strong></p>
 <ul>

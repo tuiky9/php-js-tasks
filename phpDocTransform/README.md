@@ -2,19 +2,19 @@
 
 ## Task
 
-You are given a string containing a **PHPDoc** block (a doc comment that may span multiple lines).
+You receive a string that holds a **PHPDoc** comment block (possibly spanning several lines).
 
-Inside the PHPDoc, **variable names** are written in `snake_case` and always start with `$`.
+Within that block, **variable names** appear in `snake_case` and are always prefixed with `$`.
 
-Write a function that returns the same PHPDoc string with every such variable name converted to **camelCase**. Everything else in the string must stay exactly as it was (spacing, tags, punctuation, line breaks).
+Return the same PHPDoc text with every such variable name rewritten in **camelCase**. All other content — whitespace, tags, punctuation, line breaks — must remain unchanged.
 
 ## Rules
 
-- Only **variable names** are transformed (tokens that match `$` followed by `snake_case` letters, digits, and underscores).
-- The `$` prefix is kept.
-- Variable names are guaranteed to use `snake_case` (lowercase words separated by `_`).
-- Convert `word_word` → `wordWord` (first segment stays lowercase; each following segment is capitalized and joined with no underscores).
-- Do not change tags, types, descriptions, or any text that is not a `$variable` name.
+- Transform only **variable names** (tokens matching `$` followed by `snake_case` letters, digits, and underscores).
+- Retain the leading `$`.
+- Input variable names are guaranteed to be `snake_case` (lowercase segments joined by `_`).
+- Turn `word_word` into `wordWord` (the first segment stays lowercase; each later segment is capitalized and underscores are dropped).
+- Leave tags, types, descriptions, and any non-variable text untouched.
 
 ## Input
 
@@ -22,67 +22,63 @@ Write a function that returns the same PHPDoc string with every such variable na
 
 ## Output
 
-- The same string with all PHPDoc variable names in camelCase.
+- The original string with all PHPDoc variable names in camelCase.
 
 ## Examples
 
 | Input (excerpt) | Output (excerpt) |
 |-----------------|------------------|
-| `@param string $user_name` | `@param string $userName` |
-| `@param int $order_id` and `@param string $customer_email` | `@param int $orderId` and `@param string $customerEmail` |
-| `Compare $old_value with $new_value.` | `Compare $oldValue with $newValue.` |
-| `@param string $name` | `@param string $name` (no underscores — unchanged) |
-| `@param string $http_request_id` | `@param string $httpRequestId` |
+| `@param string $user_name  Optional comment.` | `@param string $userName  Optional comment.` |
+| `@param int $src_id @param int $dst_id` | `@param int $srcId @param int $dstId` |
+| `@var string $api_v2_key` | `@var string $apiV2Key` |
+| `@return void` (no variables) | `@return void` (unchanged) |
+| `No variables here.` | `No variables here.` |
 
 ```text
 Input:
 /**
- * @param string $user_name
- * @return void
+ * @param string $user_name  Optional comment.
+ * @return bool
  */
 
 Output:
 /**
- * @param string $userName
- * @return void
+ * @param string $userName  Optional comment.
+ * @return bool
  */
 ```
 
 ```text
 Input:
-/**
- * @param int $order_id
- * @param string $customer_email
- * @var array $line_items
- */
+/** @param int $src_id @param int $dst_id */
 
 Output:
-/**
- * @param int $orderId
- * @param string $customerEmail
- * @var array $lineItems
- */
+/** @param int $srcId @param int $dstId */
 ```
 
 ```text
 Input:
 /**
- * Compare $old_value with $new_value.
+ * @var string $api_v2_key
  */
 
 Output:
 /**
- * Compare $oldValue with $newValue.
+ * @var string $apiV2Key
  */
 ```
 
 ## Function signature
 
 ```php
-function transformPhpDocVariables(string $phpDoc): string
+class Solution {
+    public static function solution(...)
+}
 ```
 
 Implement this function in `php/phpDoc_transform.php`.
+
+Call the solution with `Solution::solution(...)`.
 
 ## Run tests
 
@@ -95,7 +91,7 @@ composer install
 From this task directory (`phpDocTransform`), run PHPUnit:
 
 ```bash
-../vendor/bin/phpunit -c ../phpunit.xml ./PhpDocTransformTest.php
+../vendor/bin/phpunit -c ../phpunit.xml php/PhpDocTransformTest.php
 ```
 
-<p><strong>Run test:</strong> <code>../vendor/bin/phpunit -c ../phpunit.xml ./PhpDocTransformTest.php</code></p>
+<p><strong>Run test:</strong> <code>../vendor/bin/phpunit -c ../phpunit.xml php/PhpDocTransformTest.php</code></p>

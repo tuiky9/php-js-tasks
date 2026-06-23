@@ -2,55 +2,59 @@
 
 ## Task
 
-Convert a **title** string into a URL **slug**: lowercase, words separated by a single hyphen, with only ASCII letters and digits left in the result.
+Turn a **title** string into a URL **slug**: lowercase text with words joined by single hyphens, keeping only ASCII letters and digits.
 
 ## Rules
 
-- Convert the entire string to **lowercase**.
-- Replace every maximal run of characters that are **not** `a-z` or `0-9` with a single `-`.
-- Remove leading and trailing `-` characters from the result.
-- If the input contains no letters or digits, return an empty string `""`.
+- Lowercase the entire string.
+- Replace each maximal run of characters that are **not** `a-z` or `0-9` with a single `-`.
+- Strip leading and trailing `-` characters.
+- When the input has no letters or digits, return `""`.
 
 ## Input
 
-- `title` — a string (may include spaces, punctuation, mixed case).
+- `title` — a string (may contain spaces, punctuation, mixed case).
 
 ## Output
 
-- A slug string using only `a-z`, `0-9`, and internal `-` separators.
+- A slug containing only `a-z`, `0-9`, and internal `-` separators.
 
 ## Examples
 
 | Input | Output |
 |-------|--------|
-| `"Hello World!"` | `"hello-world"` |
-| `"  Foo--Bar  "` | `"foo-bar"` |
-| `"PHP 8.3 Release"` | `"php-8-3-release"` |
-| `"!!!"` | `""` |
-| `"already-a-slug"` | `"already-a-slug"` |
+| `"Article"` | `"article"` |
+| `"12345"` | `"12345"` |
+| `"foo_bar_baz"` | `"foo-bar-baz"` |
+| `"Dr. Smith Goes Home"` | `"dr-smith-goes-home"` |
+| `"--trim-me--"` | `"trim-me"` |
 
 ```text
-Input:  "Hello World!"
-Output: "hello-world"
+Input:  "Article"
+Output: "article"
 ```
 
 ```text
-Input:  "  Foo--Bar  "
-Output: "foo-bar"
+Input:  "foo_bar_baz"
+Output: "foo-bar-baz"
 ```
 
 ```text
-Input:  "Year 2024: Best Practices"
-Output: "year-2024-best-practices"
+Input:  "Dr. Smith Goes Home"
+Output: "dr-smith-goes-home"
 ```
 
 ## Function signature
 
 ```php
-function slugifyTitle(string $title): string
+class Solution {
+    public static function solution(...)
+}
 ```
 
 Implement this function in `php/slugify_title.php`.
+
+Call the solution with `Solution::solution(...)`.
 
 ## Run tests
 
@@ -63,7 +67,7 @@ composer install
 From this task directory (`slugifyTitle`), run PHPUnit:
 
 ```bash
-../vendor/bin/phpunit -c ../phpunit.xml ./SlugifyTitleTest.php
+../vendor/bin/phpunit -c ../phpunit.xml php/SlugifyTitleTest.php
 ```
 
-<p><strong>Run test:</strong> <code>../vendor/bin/phpunit -c ../phpunit.xml ./SlugifyTitleTest.php</code></p>
+<p><strong>Run test:</strong> <code>../vendor/bin/phpunit -c ../phpunit.xml php/SlugifyTitleTest.php</code></p>

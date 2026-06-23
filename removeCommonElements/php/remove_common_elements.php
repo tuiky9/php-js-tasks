@@ -1,11 +1,16 @@
 <?php
 
-class Solution {
-    public function removeCommonElements(array $list1, array $list2): array
+declare(strict_types=1);
+
+namespace RemoveCommonElements;
+
+class Solution
+{
+    public static function solution(array $list1, array $list2): array
     {
-        $array1 = $list1;    
+        $array1 = $list1;
         $array2 = $list2;
-        
+
         $mergedArray = [];
             $i = 0;
             $j = 0;
@@ -31,7 +36,7 @@ class Solution {
             $mergedArray[] = $array2[$j];
             $j++;
         }
-        
+
         $cntArray = array_count_values($mergedArray);
         foreach ($mergedArray as $key => $value) {
             if (isset($cntArray[$value]) && $cntArray[$value] > 1) {

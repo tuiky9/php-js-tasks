@@ -1,4 +1,5 @@
-function buildPalindrome(st) {
+class Solution {
+    static solution(st) {
     let p = st;
     let c = st.length - 1;
     while (p.split('').reverse().join('') != p) {
@@ -6,4 +7,9 @@ function buildPalindrome(st) {
         c--;
     }
     return p;
+}
+}
+
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = { Solution };
 }

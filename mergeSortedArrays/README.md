@@ -2,17 +2,17 @@
 
 ## Task
 
-You are given two arrays of integers, each sorted in **non-decreasing** order (every element is greater than or equal to the previous one).
+You are given two integer arrays, each already sorted in **non-decreasing** order.
 
-Merge them into a **new** array that is also sorted in non-decreasing order and contains **all** elements from both input arrays.
+Combine them into a **new** array that is also sorted non-decreasing and holds **every** element from both inputs.
 
 ## Rules
 
-- Both input arrays are already sorted ascending.
+- Both arrays are sorted ascending.
 - Do **not** use built-in PHP sort functions (`sort`, `usort`, `array_merge` followed by sort, etc.).
-- Use a two-pointer merge approach (like merging in merge sort).
-- Expected time complexity: **O(n + m)**, where `n` and `m` are the lengths of the two arrays.
-- Expected extra space: **O(n + m)** for the result array.
+- Use a two-pointer merge (as in the merge step of merge sort).
+- Expected time complexity: **O(n + m)**, where `n` and `m` are the array lengths.
+- Expected extra space: **O(n + m)** for the result.
 
 ## Input
 
@@ -21,16 +21,16 @@ Merge them into a **new** array that is also sorted in non-decreasing order and 
 
 ## Output
 
-- A new sorted array containing every element from `$arr1` and `$arr2`.
+- A new sorted array with all elements from `$arr1` and `$arr2`.
 
 ## Examples
 
 | arr1 | arr2 | Output |
 |------|------|--------|
-| `[1, 3, 5, 7, 9]` | `[2, 2, 3, 4, 6, 6]` | `[1, 2, 2, 3, 3, 4, 5, 6, 6, 7, 9]` |
-| `[1, 2, 3]` | `[4, 5, 6]` | `[1, 2, 3, 4, 5, 6]` |
-| `[1, 2, 3]` | `[1, 2, 3]` | `[1, 1, 2, 2, 3, 3]` |
-| `[]` | `[1, 2]` | `[1, 2]` |
+| `[-1000, -900, -800, -700]` | `[-200, -100]` | `[-1000, -900, -800, -700, -200, -100]` |
+| `[100, 200, 300]` | `[400, 500, 600, 700]` | `[100, 200, 300, 400, 500, 600, 700]` |
+| `[-1000]` | `[1000]` | `[-1000, 1000]` |
+| `[1]` | `[1, 2, 3, 4, 5]` | `[1, 1, 2, 3, 4, 5]` |
 
 ```text
 Input:  arr1 = [-100, 0, 50, 100], arr2 = [-75, -50, -25]
@@ -38,8 +38,8 @@ Output: [-100, -75, -50, -25, 0, 50, 100]
 ```
 
 ```text
-Input:  arr1 = [1], arr2 = [1, 2, 3, 4, 5]
-Output: [1, 1, 2, 3, 4, 5]
+Input:  arr1 = [1, 2, 3], arr2 = [1, 2, 3]
+Output: [1, 1, 2, 2, 3, 3]
 ```
 
 When values are equal, take from `$arr1` first (either order is valid for equal elements; the solution uses `<=` from `$arr1`).
@@ -48,18 +48,26 @@ When values are equal, take from `$arr1` first (either order is valid for equal 
 
 ```php
 class Solution {
-    public static function solution($arr1, $arr2): array
+    public static function solution(...)
 }
 ```
 
 Implement in `php/merge_sorted_arrays.php`.
 
+Call the solution with `Solution::solution(...)`.
+
 ## Run tests
+
+From the repository root, install dependencies once:
+
+```bash
+composer install
+```
 
 From this task directory (`mergeSortedArrays`), run PHPUnit:
 
 ```bash
-../vendor/bin/phpunit -c ../phpunit.xml ./MergeSortedArraysTest.php
+../vendor/bin/phpunit -c ../phpunit.xml php/MergeSortedArraysTest.php
 ```
 
-<p><strong>Run test:</strong> <code>../vendor/bin/phpunit -c ../phpunit.xml ./MergeSortedArraysTest.php</code></p>
+<p><strong>Run test:</strong> <code>../vendor/bin/phpunit -c ../phpunit.xml php/MergeSortedArraysTest.php</code></p>

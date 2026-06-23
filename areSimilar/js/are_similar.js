@@ -1,9 +1,5 @@
-/*
- * Algorithm condition can only be true if both arrays have no more 
- * than 2 non-matching elements on same indexes. However, this subset of non-matching 
- * elements must match together.
- */
-function areSimilar(a, b) {
+class Solution {
+    static solution(a, b) {
     let diffrence = [];
     for (var i = 0; i < a.length; i++) {
         if (a[i] != b[i]) {
@@ -17,4 +13,9 @@ function areSimilar(a, b) {
         return JSON.stringify(diffrence[0].sort()) == JSON.stringify(diffrence[1].sort());
     }
     return false
+}
+}
+
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = { Solution };
 }

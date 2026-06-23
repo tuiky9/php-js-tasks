@@ -1,5 +1,13 @@
 <?php
 
-function absoluteValuesSumMinimization(array $input): int {
-    return $input[ceil(count($input) / 2) - 1];
+declare(strict_types=1);
+
+namespace AbsoluteValuesSumMinimization;
+
+class Solution
+{
+    public static function solution(array $input): int
+    {
+        return $input[ceil(count($input) / 2) - 1];
+    }
 }

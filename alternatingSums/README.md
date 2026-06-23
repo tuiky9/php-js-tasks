@@ -1,9 +1,15 @@
 <h2>Alternating Sums</h2>
-<div><p>Several people are standing in a row and need to be divided into two teams. The first person goes into <em>team 1</em>, the second goes into <em>team 2</em>, the third goes into <em>team 1</em> again, the fourth into <em>team 2</em>, and so on.</p>
-<p>You are given an array of positive integers - the weights of the people. Return an array of two integers, where the first element is the total weight of <em>team 1</em>, and the second element is the total weight of <em>team 2</em> after the division is complete.</p>
+<div><p>People are lined up in a row and must be split into two teams. The first person joins team 1, the second joins team 2, the third returns to team 1, the fourth to team 2, and the pattern continues.</p>
+<p>Each person's weight is given as a positive integer in an array. Return a two-element array: the total weight of team 1 first, then the total weight of team 2.</p>
 <p><span style="color:#44BFA3;font-size:1.4em">Example</span></p>
-<p>For <code>a = [50, 60, 60, 45, 70]</code>, the output should be<br>
-<code>alternatingSums(a) = [180, 105]</code>.</p>
+<p>For <code>a = [100]</code>, the output should be<br>
+<code>alternatingSums(a) = [100, 0]</code>.</p>
+<p>For <code>a = [1, 2, 3, 4, 5, 6]</code>, the output should be<br>
+<code>alternatingSums(a) = [9, 12]</code>.</p>
+<p>For <code>a = [10, 10, 10, 10]</code>, the output should be<br>
+<code>alternatingSums(a) = [20, 20]</code>.</p>
+<p>For <code>a = [7, 3, 5]</code>, the output should be<br>
+<code>alternatingSums(a) = [12, 3]</code>.</p>
 <p><span style="color:#44BFA3;font-size:1.4em">Input/Output</span></p>
 <ul>
 <li>
@@ -21,4 +27,4 @@
 </ul>
 
 </div>
-<p><strong>Run test:</strong> <code>../vendor/bin/phpunit -c ../phpunit.xml ./AlternatingSumsTest.php</code></p>
+<p><strong>Run test:</strong> <code>../vendor/bin/phpunit -c ../phpunit.xml php/AlternatingSumsTest.php</code></p>

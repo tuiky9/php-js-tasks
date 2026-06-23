@@ -1,28 +1,65 @@
-<h2>Is Digit</h2>
-<p>source: <a href="https://www.codesignal.com/">codesignal.com</a>
-<div><p>Determine if the given character is a digit or not.</p>
-<p><span style="color:#44BFA3;font-size:1.4em">Example</span></p>
-<ul>
-<li>For <code>symbol = '0'</code>, the output should be<br>
-<code>isDigit(symbol) = true</code>;</li>
-<li>For <code>symbol = '-'</code>, the output should be<br>
-<code>isDigit(symbol) = false</code>.</li>
-</ul>
-<p><span style="color:#44BFA3;font-size:1.4em">Input/Output</span></p>
-<ul>
-<li>
-<p><strong>[execution time limit] 4 seconds (js)</strong></p>
-</li>
-<li>
-<p><strong>[input] char symbol</strong></p>
-<p>A character which is either a digit or not.</p>
-</li>
-<li>
-<p><strong>[output] boolean</strong></p>
-<ul>
-<li><code>true</code> if <code>symbol</code> is a digit, <code>false</code> otherwise.</li>
-</ul>
-</li>
-</ul>
-</div>
-<p><strong>Run test:</strong> <code>../vendor/bin/phpunit -c ../phpunit.xml ./IsDigitTest.php</code></p>
+# Is Digit
+
+## Task
+
+Given a single character, return whether it is a decimal digit (`0` through `9`).
+
+## Input
+
+- `symbol` — one character (may be a digit, a letter, punctuation, etc.).
+
+## Output
+
+- `true` if `symbol` is a digit.
+- `false` otherwise.
+
+## Examples
+
+| symbol | Output |
+|--------|--------|
+| `'1'` | `true` |
+| `'9'` | `true` |
+| `'o'` | `false` |
+
+```text
+Input:  symbol = '1'
+Output: true
+```
+
+```text
+Input:  symbol = '9'
+Output: true
+```
+
+```text
+Input:  symbol = 'o'
+Output: false
+```
+
+## Function signature
+
+```php
+class Solution {
+    public static function solution(...)
+}
+```
+
+Implement in `php/is_digit.php`.
+
+Call the solution with `Solution::solution(...)`.
+
+## Run tests
+
+From the repository root, install dependencies once:
+
+```bash
+composer install
+```
+
+From this task directory (`isDigit`), run PHPUnit:
+
+```bash
+../vendor/bin/phpunit -c ../phpunit.xml php/IsDigitTest.php
+```
+
+<p><strong>Run test:</strong> <code>../vendor/bin/phpunit -c ../phpunit.xml php/IsDigitTest.php</code></p>

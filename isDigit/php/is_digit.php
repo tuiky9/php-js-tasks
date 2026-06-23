@@ -1,7 +1,14 @@
 <?php
 
-function isDigit($symbol)
-{
+declare(strict_types=1);
 
-    return is_numeric($symbol);
+namespace IsDigit;
+
+class Solution
+{
+    public static function solution($symbol)
+    {
+
+        return is_numeric($symbol);
+    }
 }

@@ -1,27 +1,27 @@
 <?php
 
-/*
-CodeSignal (CodeFights)
-www.codesignal.com
+declare(strict_types=1);
 
-Some people are standing in a row in a park. There are trees between them which cannot be moved. Your task is to rearrange the people by their heights in a non-descending order without moving the trees.
-*/
+namespace SortByHeight;
 
-function sortByHeight($a)
+class Solution
 {
+    public static function solution($a)
+    {
 
-    $s = array_filter($a, function ($v) {
-        return $v != -1;
-    });
-    sort($s);
+        $s = array_filter($a, function ($v) {
+            return $v != -1;
+        });
+        sort($s);
 
-    foreach ($a as $k => $v) {
-        if ($v === -1) {
-            continue;
+        foreach ($a as $k => $v) {
+            if ($v === -1) {
+                continue;
+            }
+
+            $a[$k] = array_shift($s);
         }
 
-        $a[$k] = array_shift($s);
+        return $a;
     }
-
-    return $a;
 }
