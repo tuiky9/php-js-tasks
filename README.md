@@ -1,5 +1,7 @@
 # Tasks and solutions in PHP and Javascript.
 
+This repository is for practicing coding skills. It collects small programming tasks with solutions and tests in PHP and JavaScript.
+
 ## Project structure
 
 Each task lives in its own folder:
@@ -27,20 +29,6 @@ PHPUnit tests import the namespaced class, e.g. `use FormatBytes\Solution;`, the
 
 ## Run tests
 
-PHP runs in the Laradock **workspace** container (not on the host). From the Laradock directory:
-
-```bash
-cd ../laradock
-docker-compose exec workspace bash
-```
-
-Inside the container (`/var/www` is the project root):
-
-```bash
-composer install
-vendor/bin/phpunit -c phpunit.xml
-```
-
 Run a single task:
 
 ```bash
@@ -61,10 +49,4 @@ Or call PHPCS directly:
 ```bash
 vendor/bin/phpcs --standard=phpcs.xml
 vendor/bin/phpcbf --standard=phpcs.xml
-```
-
-One-liner from the host (Laradock directory):
-
-```bash
-docker-compose exec workspace bash -c "cd /var/www && vendor/bin/phpunit -c phpunit.xml"
 ```
