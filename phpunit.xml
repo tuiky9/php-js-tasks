@@ -18,6 +18,7 @@
             <directory suffix="Test.php">arrayMaxConsecutiveSum/php</directory>
             <directory suffix="Test.php">arrayMaximalAdjacentDifference/php</directory>
             <directory suffix="Test.php">arrayReplace/php</directory>
+            <directory suffix="Test.php">avoidObstacles/php</directory>
             <directory suffix="Test.php">bishopAndPawn/php</directory>
             <directory suffix="Test.php">binarySearch/php</directory>
             <directory suffix="Test.php">boxBlur/php</directory>
@@ -26,10 +27,12 @@
             <directory suffix="Test.php">checkPalindrome/php</directory>
             <directory suffix="Test.php">cidrContains/php</directory>
             <directory suffix="Test.php">chessBoardCellColor/php</directory>
+            <directory suffix="Test.php">chessKnight/php</directory>
             <directory suffix="Test.php">circleOfNumbers/php</directory>
             <directory suffix="Test.php">commonCharacterCount/php</directory>
             <directory suffix="Test.php">countLessThanMatrix/php</directory>
             <directory suffix="Test.php">dedupePreserveOrder/php</directory>
+            <directory suffix="Test.php">deleteDigit/php</directory>
             <directory suffix="Test.php">deepMerge/php</directory>
             <directory suffix="Test.php">depositProfit/php</directory>
             <directory suffix="Test.php">differentSymbolsNaive/php</directory>
