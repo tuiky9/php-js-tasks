@@ -3,6 +3,9 @@
     "description": "PHP and JavaScript coding tasks",
     "version": "1.0.0",
     "type": "project",
+    "require": {
+        "php": "^8.3"
+    },
     "require-dev": {
         "squizlabs/php_codesniffer": "^4.0",
         "phpunit/phpunit": "13.1.8"
