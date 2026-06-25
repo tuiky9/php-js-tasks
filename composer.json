@@ -59,6 +59,7 @@
             "formatBytes/php",
             "growingPlant/php",
             "intersectStrings/php",
+            "insertionSort/php",
             "isBeautifulString/php",
             "isDigit/php",
             "isIPv4Address/php",

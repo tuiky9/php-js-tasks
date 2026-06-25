@@ -47,6 +47,7 @@
             <directory suffix="Test.php">formatBytes/php</directory>
             <directory suffix="Test.php">growingPlant/php</directory>
             <directory suffix="Test.php">intersectStrings/php</directory>
+            <directory suffix="Test.php">insertionSort/php</directory>
             <directory suffix="Test.php">isBeautifulString/php</directory>
             <directory suffix="Test.php">isDigit/php</directory>
             <directory suffix="Test.php">isIPv4Address/php</directory>
