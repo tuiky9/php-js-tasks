@@ -35,7 +35,10 @@
             <directory suffix="Test.php">deleteDigit/php</directory>
             <directory suffix="Test.php">deepMerge/php</directory>
             <directory suffix="Test.php">depositProfit/php</directory>
+            <directory suffix="Test.php">differentSquares/php</directory>
             <directory suffix="Test.php">differentSymbolsNaive/php</directory>
+            <directory suffix="Test.php">digitDegree/php</directory>
+            <directory suffix="Test.php">digitsProduct/php</directory>
             <directory suffix="Test.php">electionsWinners/php</directory>
             <directory suffix="Test.php">evenDigitsOnly/php</directory>
             <directory suffix="Test.php">fileNaming/php</directory>
