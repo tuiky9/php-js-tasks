@@ -62,6 +62,7 @@
             <directory suffix="Test.php">matrixElementsSum/php</directory>
             <directory suffix="Test.php">mergeNSortedArrays/php</directory>
             <directory suffix="Test.php">mergeSortedArrays/php</directory>
+            <directory suffix="Test.php">mergeSort/php</directory>
             <directory suffix="Test.php">messageFromBinaryCode/php</directory>
             <directory suffix="Test.php">minesweeper/php</directory>
             <directory suffix="Test.php">pairingCharsRecursively/php</directory>

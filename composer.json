@@ -74,6 +74,7 @@
             "matrixElementsSum/php",
             "mergeNSortedArrays/php",
             "mergeSortedArrays/php",
+            "mergeSort/php",
             "messageFromBinaryCode/php",
             "minesweeper/php",
             "pairingCharsRecursively/php",
