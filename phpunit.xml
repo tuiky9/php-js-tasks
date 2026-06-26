@@ -63,6 +63,7 @@
             <directory suffix="Test.php">mergeNSortedArrays/php</directory>
             <directory suffix="Test.php">mergeSortedArrays/php</directory>
             <directory suffix="Test.php">messageFromBinaryCode/php</directory>
+            <directory suffix="Test.php">minesweeper/php</directory>
             <directory suffix="Test.php">pairingCharsRecursively/php</directory>
             <directory suffix="Test.php">palindromeRearranging/php</directory>
             <directory suffix="Test.php">parseQueryString/php</directory>
@@ -74,7 +75,9 @@
             <directory suffix="Test.php">shapeArea/php</directory>
             <directory suffix="Test.php">sortByHeight/php</directory>
             <directory suffix="Test.php">slugifyTitle/php</directory>
+            <directory suffix="Test.php">spiralNumbers/php</directory>
             <directory suffix="Test.php">stringsRearrangement/php</directory>
+            <directory suffix="Test.php">sudoku/php</directory>
             <directory suffix="Test.php">sumUpNumbers/php</directory>
             <directory suffix="Test.php">toeplitzMatrix/php</directory>
             <directory suffix="Test.php">validTime/php</directory>

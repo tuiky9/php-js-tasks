@@ -1,35 +1,73 @@
-<h2>Minesweeper</h2>
-<div><p>In the popular <strong>Minesweeper</strong> game you have a board with some mines and those cells that don't contain a mine have a number in it that indicates the total number of mines in the neighboring cells. Starting off with some arrangement of mines we want to create a <strong>Minesweeper</strong> game setup.</p>
-<p><span style="color:#44BFA3;font-size:1.4em">Example</span></p>
-<p>For</p>
-<pre><code>matrix = [[true, false, false],
-          [false, true, false],
-          [false, false, false]]
-</code></pre>
-<p>the output should be</p>
-<pre><code>minesweeper(matrix) = [[1, 2, 1],
-                       [2, 1, 1],
-                       [1, 1, 1]]
-</code></pre>
-<p>Check out the image below for better understanding:</p>
-<p><img src="img/minesweeper.png" alt="Minesweeper Image"></p>
-<p><span style="color:#44BFA3;font-size:1.4em">Input/Output</span></p>
-<ul>
-<li>
-<p><strong>[execution time limit] 4 seconds (js)</strong></p>
-</li>
-<li>
-<p><strong>[input] array.array.boolean matrix</strong></p>
-<p>A non-empty rectangular matrix consisting of boolean values - <code>true</code> if the corresponding cell contains a mine, <code>false</code> otherwise.</p>
-<p><em>Guaranteed constraints:</em><br>
-<code>2 ≤ matrix.length ≤ 100</code>,<br>
-<code>2 ≤ matrix[0].length ≤ 100</code>.</p>
-</li>
-<li>
-<p><strong>[output] array.array.integer</strong></p>
-<ul>
-<li>Rectangular matrix of the same size as <code>matrix</code> each cell of which contains an integer equal to the number of mines in the neighboring cells. Two cells are called neighboring if they share at least one corner.</li>
-</ul>
-</li>
-</ul>
-</div>
+# Minesweeper
+
+## Task
+
+Build a **Minesweeper** number board from a mine layout.
+
+You are given a rectangular grid where each cell is either a mine (`true`) or empty (`false`). Return a grid of the same size where every cell contains the count of mines in its **neighboring** cells (including diagonals). Cells that share a corner count as neighbors.
+
+## Rules
+
+- The output grid has the same dimensions as the input.
+- Neighbors are the up to eight cells surrounding a cell (orthogonal and diagonal).
+- Out-of-bounds neighbors are ignored.
+- Mine cells also receive a neighbor count (they are not replaced with a special marker).
+
+## Input
+
+- `$matrix` — non-empty rectangular 2D array of booleans (`true` = mine, `false` = no mine).
+
+## Output
+
+- 2D array of integers with neighbor mine counts.
+
+## Examples
+
+For
+
+```text
+[[true, false, false],
+ [false, true, false],
+ [false, false, false]]
+```
+
+the output is
+
+```text
+[[1, 2, 1],
+ [2, 1, 1],
+ [1, 1, 1]]
+```
+
+```text
+Input:  matrix = [[true, true], [true, true]]
+Output: [[3, 3], [3, 3]]
+```
+
+## Function signature
+
+```php
+class Solution {
+    public static function solution(array $matrix): array
+}
+```
+
+Implement this function in `php/minesweeper.php`.
+
+Call the solution with `Solution::solution(...)`.
+
+## Run tests
+
+From the repository root, install dependencies once:
+
+```bash
+composer install
+```
+
+From this task directory (`minesweeper`), run PHPUnit:
+
+```bash
+../vendor/bin/phpunit -c ../phpunit.xml php/MinesweeperTest.php
+```
+
+<p><strong>Run test:</strong> <code>../vendor/bin/phpunit -c ../phpunit.xml php/MinesweeperTest.php</code></p>
