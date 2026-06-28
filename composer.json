@@ -81,6 +81,7 @@
             "palindromeRearranging/php",
             "parseQueryString/php",
             "phpDocTransform/php",
+            "quickSort/php",
             "removeCommonElements/php",
             "reverseInGroups/php",
             "reverseInParantheses/php",
