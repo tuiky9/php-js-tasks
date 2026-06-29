@@ -67,6 +67,7 @@
             "isMAC48Address/php",
             "knapsackLight/php",
             "lineEncoding/php",
+            "linkedListPalindrome/php",
             "longestCommonSuffix/php",
             "longestDigitsPrefix/php",
             "longestWord/php",
