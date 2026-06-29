@@ -4,7 +4,7 @@
 
 Sort an array of `n` integers into **ascending order** using the **Quick Sort** algorithm and return the sorted result.
 
-Quick Sort is a divide-and-conquer, comparison-based sorting algorithm:
+Quick Sort is a comparison-based sorting algorithm:
 
 1. **Choose a pivot** — pick an element from the array (this task uses the middle element).
 2. **Partition** — place values less than the pivot before it, equal values with the pivot, and greater values after it.
