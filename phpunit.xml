@@ -82,6 +82,7 @@
             <directory suffix="Test.php">stringsRearrangement/php</directory>
             <directory suffix="Test.php">sudoku/php</directory>
             <directory suffix="Test.php">sumUpNumbers/php</directory>
+            <directory suffix="Test.php">swapLinkedListNodes/php</directory>
             <directory suffix="Test.php">toeplitzMatrix/php</directory>
             <directory suffix="Test.php">validTime/php</directory>
             <directory suffix="Test.php">variableName/php</directory>

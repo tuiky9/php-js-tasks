@@ -94,6 +94,7 @@
             "stringsRearrangement/php",
             "sudoku/php",
             "sumUpNumbers/php",
+            "swapLinkedListNodes/php",
             "toeplitzMatrix/php",
             "validTime/php",
             "variableName/php"
