@@ -84,6 +84,7 @@
             "phpDocTransform/php",
             "quickSort/php",
             "removeCommonElements/php",
+            "removeDuplicates/php",
             "reverseInGroups/php",
             "reverseInParantheses/php",
             "secondaryDiagonalMinMax/php",
