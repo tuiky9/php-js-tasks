@@ -87,6 +87,7 @@
             "removeDuplicates/php",
             "reverseInGroups/php",
             "reverseInParantheses/php",
+            "rotateRight/php",
             "secondaryDiagonalMinMax/php",
             "shapeArea/php",
             "slugifyTitle/php",
