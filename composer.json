@@ -68,6 +68,7 @@
             "knapsackLight/php",
             "lineEncoding/php",
             "linkedListPalindrome/php",
+            "linkedListCycle/php",
             "longestCommonSuffix/php",
             "longestDigitsPrefix/php",
             "longestWord/php",
