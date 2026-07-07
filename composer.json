@@ -74,6 +74,7 @@
             "longestWord/php",
             "makeArrayConsecutive/php",
             "matrixElementsSum/php",
+            "maxStack/php",
             "mergeNSortedArrays/php",
             "mergeSortedArrays/php",
             "mergeSort/php",
