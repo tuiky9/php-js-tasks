@@ -87,6 +87,7 @@
             "quickSort/php",
             "removeCommonElements/php",
             "removeDuplicates/php",
+            "repeatedCharsLowestIndex/php",
             "reverseInGroups/php",
             "reverseInParantheses/php",
             "rotateRight/php",
