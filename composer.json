@@ -73,6 +73,7 @@
             "longestDigitsPrefix/php",
             "longestWord/php",
             "makeArrayConsecutive/php",
+            "maskEmail/php",
             "matrixElementsSum/php",
             "maxStack/php",
             "mergeNSortedArrays/php",

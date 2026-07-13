@@ -61,6 +61,7 @@
             <directory suffix="Test.php">longestDigitsPrefix/php</directory>
             <directory suffix="Test.php">longestWord/php</directory>
             <directory suffix="Test.php">makeArrayConsecutive/php</directory>
+            <directory suffix="Test.php">maskEmail/php</directory>
             <directory suffix="Test.php">matrixElementsSum/php</directory>
             <directory suffix="Test.php">maxStack/php</directory>
             <directory suffix="Test.php">mergeNSortedArrays/php</directory>
