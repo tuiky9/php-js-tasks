@@ -4,22 +4,23 @@ declare(strict_types=1);
 
 namespace RepeatedCharsLowestIndex;
 
-function solution(string $str): ?string
+final class Solution
 {
-    $arr = [];
-    for ($i = 0; $i < strlen($str); $i++) {
-        if (!isset($arr[$str[$i]])) {
-            $arr[$str[$i]] = 1;
-        } else {
-            $arr[$str[$i]]++;
-        }
-    }
+    public static function solution(string $str): ?string
+    {
+        $counts = [];
 
-    foreach ($arr as $key => $value) {
-        if ($value > 1) {
-            return $key;
+        for ($i = 0, $length = strlen($str); $i < $length; $i++) {
+            $char = $str[$i];
+            $counts[$char] = ($counts[$char] ?? 0) + 1;
         }
-    }
 
-    return null;
+        foreach ($counts as $char => $count) {
+            if ($count > 1) {
+                return (string) $char;
+            }
+        }
+
+        return null;
+    }
 }
