@@ -84,6 +84,7 @@
             "pairingCharsRecursively/php",
             "palindromeRearranging/php",
             "parseQueryString/php",
+            "patternBuilder/php",
             "phpDocTransform/php",
             "preorderTraversal/php",
             "postorderTraversal/php",
