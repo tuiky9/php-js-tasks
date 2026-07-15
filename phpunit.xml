@@ -72,6 +72,7 @@
             <directory suffix="Test.php">pairingCharsRecursively/php</directory>
             <directory suffix="Test.php">palindromeRearranging/php</directory>
             <directory suffix="Test.php">parseQueryString/php</directory>
+            <directory suffix="Test.php">patternBuilder/php</directory>
             <directory suffix="Test.php">phpDocTransform/php</directory>
             <directory suffix="Test.php">preorderTraversal/php</directory>
             <directory suffix="Test.php">postorderTraversal/php</directory>
