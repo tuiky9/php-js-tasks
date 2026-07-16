@@ -84,6 +84,7 @@
             <directory suffix="Test.php">reverseInGroups/php</directory>
             <directory suffix="Test.php">rotateRight/php</directory>
             <directory suffix="Test.php">secondaryDiagonalMinMax/php</directory>
+            <directory suffix="Test.php">secondMinimumInTree/php</directory>
             <directory suffix="Test.php">shapeArea/php</directory>
             <directory suffix="Test.php">sortByHeight/php</directory>
             <directory suffix="Test.php">slugifyTitle/php</directory>

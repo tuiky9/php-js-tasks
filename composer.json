@@ -96,6 +96,7 @@
             "reverseInParantheses/php",
             "rotateRight/php",
             "secondaryDiagonalMinMax/php",
+            "secondMinimumInTree/php",
             "shapeArea/php",
             "slugifyTitle/php",
             "sortByHeight/php",
