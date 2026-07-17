@@ -92,6 +92,7 @@
             "removeCommonElements/php",
             "removeDuplicates/php",
             "repeatedCharsLowestIndex/php",
+            "reverseBinaryTree/php",
             "reverseInGroups/php",
             "reverseInParantheses/php",
             "rotateRight/php",
