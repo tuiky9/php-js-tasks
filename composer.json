@@ -61,6 +61,7 @@
             "intersectStrings/php",
             "insertionSort/php",
             "isBeautifulString/php",
+            "isBinarySearchTree/php",
             "isDigit/php",
             "isIPv4Address/php",
             "isLucky/php",
