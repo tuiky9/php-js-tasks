@@ -53,6 +53,7 @@
             "digitsProduct/php",
             "electionsWinners/php",
             "evenDigitsOnly/php",
+            "factorialMemoization/php",
             "fileNaming/php",
             "findEmailDomain/php",
             "firstDigit/php",
