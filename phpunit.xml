@@ -41,6 +41,7 @@
             <directory suffix="Test.php">digitsProduct/php</directory>
             <directory suffix="Test.php">electionsWinners/php</directory>
             <directory suffix="Test.php">evenDigitsOnly/php</directory>
+            <directory suffix="Test.php">factorialMemoization/php</directory>
             <directory suffix="Test.php">fileNaming/php</directory>
             <directory suffix="Test.php">findEmailDomain/php</directory>
             <directory suffix="Test.php">firstDigit/php</directory>
