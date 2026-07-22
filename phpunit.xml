@@ -29,6 +29,7 @@
             <directory suffix="Test.php">chessBoardCellColor/php</directory>
             <directory suffix="Test.php">chessKnight/php</directory>
             <directory suffix="Test.php">circleOfNumbers/php</directory>
+            <directory suffix="Test.php">climbingStairs/php</directory>
             <directory suffix="Test.php">commonCharacterCount/php</directory>
             <directory suffix="Test.php">countLessThanMatrix/php</directory>
             <directory suffix="Test.php">dedupePreserveOrder/php</directory>

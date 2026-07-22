@@ -41,6 +41,7 @@
             "chessKnight/php",
             "cidrContains/php",
             "circleOfNumbers/php",
+            "climbingStairs/php",
             "commonCharacterCount/php",
             "countLessThanMatrix/php",
             "dedupePreserveOrder/php",
