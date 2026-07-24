@@ -42,6 +42,7 @@
             "cidrContains/php",
             "circleOfNumbers/php",
             "climbingStairs/php",
+            "coinChange/php",
             "commonCharacterCount/php",
             "countLessThanMatrix/php",
             "dedupePreserveOrder/php",
