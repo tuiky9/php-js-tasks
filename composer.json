@@ -84,6 +84,7 @@
             "mergeSort/php",
             "messageFromBinaryCode/php",
             "minesweeper/php",
+            "minSteps/php",
             "pairingCharsRecursively/php",
             "palindromeRearranging/php",
             "parseQueryString/php",
