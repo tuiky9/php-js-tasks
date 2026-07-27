@@ -90,6 +90,7 @@
             "palindromeRearranging/php",
             "parseQueryString/php",
             "patternBuilder/php",
+            "perfectSquares/php",
             "phpDocTransform/php",
             "preorderTraversal/php",
             "postorderTraversal/php",
