@@ -105,6 +105,7 @@
             "secondaryDiagonalMinMax/php",
             "secondMinimumInTree/php",
             "shapeArea/php",
+            "shortestDistance/php",
             "slugifyTitle/php",
             "sortByHeight/php",
             "spiralNumbers/php",
