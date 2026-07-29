@@ -115,7 +115,8 @@
             "swapLinkedListNodes/php",
             "toeplitzMatrix/php",
             "validTime/php",
-            "variableName/php"
+            "variableName/php",
+            "verticesWithinDistance/php"
         ]
     },
     "scripts": {
