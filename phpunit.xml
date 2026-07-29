@@ -104,6 +104,7 @@
             <directory suffix="Test.php">toeplitzMatrix/php</directory>
             <directory suffix="Test.php">validTime/php</directory>
             <directory suffix="Test.php">variableName/php</directory>
+            <directory suffix="Test.php">verticesWithinDistance/php</directory>
         </testsuite>
     </testsuites>
 </phpunit>
