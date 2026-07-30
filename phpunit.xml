@@ -94,6 +94,7 @@
             <directory suffix="Test.php">secondMinimumInTree/php</directory>
             <directory suffix="Test.php">shapeArea/php</directory>
             <directory suffix="Test.php">shortestDistance/php</directory>
+            <directory suffix="Test.php">shortestRoute/php</directory>
             <directory suffix="Test.php">sortByHeight/php</directory>
             <directory suffix="Test.php">slugifyTitle/php</directory>
             <directory suffix="Test.php">spiralNumbers/php</directory>
