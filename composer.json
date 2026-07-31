@@ -31,6 +31,7 @@
             "arrayMaximalAdjacentDifference/php",
             "arrayReplace/php",
             "avoidObstacles/php",
+            "bfsMatrix/php",
             "binarySearch/php",
             "bishopAndPawn/php",
             "boxBlur/php",
