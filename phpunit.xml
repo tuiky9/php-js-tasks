@@ -59,6 +59,7 @@
             <directory suffix="Test.php">isLucky/php</directory>
             <directory suffix="Test.php">isMAC48Address/php</directory>
             <directory suffix="Test.php">knapsackLight/php</directory>
+            <directory suffix="Test.php">knightMoves/php</directory>
             <directory suffix="Test.php">lineEncoding/php</directory>
             <directory suffix="Test.php">linkedListPalindrome/php</directory>
             <directory suffix="Test.php">linkedListCycle/php</directory>

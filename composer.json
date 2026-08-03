@@ -71,6 +71,7 @@
             "isLucky/php",
             "isMAC48Address/php",
             "knapsackLight/php",
+            "knightMoves/php",
             "lineEncoding/php",
             "linkedListPalindrome/php",
             "linkedListCycle/php",
