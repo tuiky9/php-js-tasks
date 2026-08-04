@@ -117,6 +117,7 @@
             "sumUpNumbers/php",
             "swapLinkedListNodes/php",
             "toeplitzMatrix/php",
+            "uniquePermutations/php",
             "validTime/php",
             "variableName/php",
             "verticesWithinDistance/php"
