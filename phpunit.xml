@@ -105,6 +105,7 @@
             <directory suffix="Test.php">sumUpNumbers/php</directory>
             <directory suffix="Test.php">swapLinkedListNodes/php</directory>
             <directory suffix="Test.php">toeplitzMatrix/php</directory>
+            <directory suffix="Test.php">uniquePermutations/php</directory>
             <directory suffix="Test.php">validTime/php</directory>
             <directory suffix="Test.php">variableName/php</directory>
             <directory suffix="Test.php">verticesWithinDistance/php</directory>
