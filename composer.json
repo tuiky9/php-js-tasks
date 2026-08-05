@@ -20,6 +20,7 @@
         "classmap": [
             "absoluteValuesSumMinimization/php",
             "addBorder/php",
+            "allCombinations/php",
             "allLongestStrings/php",
             "almostIncreasingSequence/php",
             "alphabeticShift/php",
