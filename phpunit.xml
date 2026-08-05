@@ -8,6 +8,7 @@
         <testsuite name="PHP Tasks">
             <directory suffix="Test.php">absoluteValuesSumMinimization/php</directory>
             <directory suffix="Test.php">addBorder/php</directory>
+            <directory suffix="Test.php">allCombinations/php</directory>
             <directory suffix="Test.php">allLongestStrings/php</directory>
             <directory suffix="Test.php">almostIncreasingSequence/php</directory>
             <directory suffix="Test.php">alphabeticShift/php</directory>
