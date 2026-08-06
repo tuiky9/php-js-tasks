@@ -62,6 +62,7 @@
             "findEmailDomain/php",
             "firstDigit/php",
             "formatBytes/php",
+            "generateParentheses/php",
             "growingPlant/php",
             "intersectStrings/php",
             "insertionSort/php",

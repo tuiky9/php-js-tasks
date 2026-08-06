@@ -50,6 +50,7 @@
             <directory suffix="Test.php">findEmailDomain/php</directory>
             <directory suffix="Test.php">firstDigit/php</directory>
             <directory suffix="Test.php">formatBytes/php</directory>
+            <directory suffix="Test.php">generateParentheses/php</directory>
             <directory suffix="Test.php">growingPlant/php</directory>
             <directory suffix="Test.php">intersectStrings/php</directory>
             <directory suffix="Test.php">insertionSort/php</directory>
