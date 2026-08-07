@@ -74,6 +74,7 @@
             "isMAC48Address/php",
             "knapsackLight/php",
             "knightMoves/php",
+            "letterCasePermutation/php",
             "lineEncoding/php",
             "linkedListPalindrome/php",
             "linkedListCycle/php",
